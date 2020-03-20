@@ -9,7 +9,7 @@ layout: default
 
 ### Categories
 - Write-up
-  - [HackTheBox](/write-up/postman) writeups
+  - [HackTheBox](https://github.com/faisalfs10x/faisalfs10x.github.io/blob/master/_post/htbpostman.md) writeups
   - [notes](/notes)
   
 - Notes
