@@ -2,7 +2,7 @@ theme: jekyll-theme-hacker
 title: Site under construction XD Welcome to my page :D
 description: >- # this means to ignore newlines until "baseurl:"
   Feel free to visit my page for sharing session. xD
-baseurl: "/faisalfs10x" # the subpath of your site, e.g. /blog
+#baseurl: "/faisalfs10x" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  faisalfs10x
@@ -12,7 +12,7 @@ error_message: >-
 #   repository_url: http://www.google.com
 
 # Build settings
-markdown: kramdown
+#markdown: kramdown
 plugins:
   - jekyll-feed
 
