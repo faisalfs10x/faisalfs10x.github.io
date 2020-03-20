@@ -9,7 +9,7 @@ layout: default
 
 ### Categories
 - Write-up
-  - [HackTheBox](_post/htbpostman.md) writeups
+  - [HackTheBox](/write-up/postman) writeups
   - [notes](/notes)
   
 - Notes
