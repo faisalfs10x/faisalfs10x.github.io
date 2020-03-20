@@ -9,7 +9,11 @@ layout: default
 
 ### Categories
 - Write-up
-  - [hackTheBox](/faisal/challenges) writeups
+  - [HackTheBox](/faisal/htbwriteup) writeups
   - [notes](/faisal/notes)
+  
+- Notes
+
+- Linux tutorial
 
 Do follow me on [github](https://github.com/faisalfs10x)
