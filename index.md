@@ -5,12 +5,12 @@ title: hello
 layout: default
 ---
 ### Whoami
-- [about me](whoami)
+- [about me](faisalfs10x/whoami)
 
 ### Categories
 - Write-up
-  - [HackTheBox](/write-up/postman) writeups
-  - [notes](/faisal/notes)
+  - [HackTheBox](faisalfs10x/write-up/postman) writeups
+  - [notes](faisalfs10x/notes)
   
 - Notes
 
