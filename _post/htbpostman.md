@@ -2,7 +2,7 @@
 layout: post
 title: "Postman write-up"
 categories: jekyll
-permalink:  /write-up/postman
+permalink:  /write-up/postman/
 ---
 
 
