@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 title: hello
 layout: default
+
 ---
 ### Whoami
 - [about me](/whoami)
@@ -10,6 +11,7 @@ layout: default
 ### Categories
 - Write-up
   - [HackTheBox](/page/writeup/htbpostman) writeups
+  - [writeypostman](/htbPostman)
   - [notes](/notes)
   
 - Notes
