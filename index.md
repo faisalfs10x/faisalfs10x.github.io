@@ -5,11 +5,11 @@ title: hello
 layout: default
 ---
 ### Whoami
-- [about me](/whoa)
+- [about me](/whoami)
 
 ### Categories
 - Write-up
-  - [HackTheBox](/htbPostman) writeups
+  - [HackTheBox](_posts/2020-03-22-htbPostman) writeups
   - [notes](/notes)
   
 - Notes
