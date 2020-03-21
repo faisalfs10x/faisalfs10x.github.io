@@ -1,12 +1,3 @@
-<!---
----
-layout: post
-title: "Postman write-up"
-categories: jekyll
-permalink:  /write-up/postman
-
----
--->
 
 layout: page
 title: "Postman write-up"
