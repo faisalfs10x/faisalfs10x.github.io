@@ -5,7 +5,7 @@ title: hello
 layout: default
 ---
 ### Whoami
-- [about me](/whoami)
+- [about me](/whoa)
 
 ### Categories
 - Write-up
