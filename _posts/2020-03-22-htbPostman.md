@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Postman write-up"
 date: 2020-03-22 00:22:00 -0000
 categories: jekyll
