@@ -1,6 +1,6 @@
-theme: jekyll-theme-hacker
-title: Site under construction XD Welcome to my page :D
-permalink: /posts/:title/
+theme: darkly
+title: Sit3 under construction XD Welcome to my page :D
+permalink: /_posts/:title/
 description: >- # this means to ignore newlines until "baseurl:"
   Feel free to visit my page for sharing session. xD
 #baseurl: "/faisalfs10x" # the subpath of your site, e.g. /blog
@@ -13,7 +13,7 @@ error_message: >-
 #   repository_url: http://www.google.com
 
 # Build settings
-#markdown: kramdown
+markdown: kramdown
 plugins:
   - jekyll-feed
 
