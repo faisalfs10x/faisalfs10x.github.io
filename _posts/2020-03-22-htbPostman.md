@@ -1,18 +1,13 @@
-<!---
 ---
 layout: post
 title: "Postman write-up"
+date: 2020-03-22 00:22:00 -0000
 categories: jekyll
-permalink:  /write-up/postman
+permalink: htbPostman
 
 ---
--->
 
-layout: page
-title: "Postman write-up"
-date: 2020-03-22 00:22:00 -0000
-categories: writeup htb
 
-#### Postman
+#### Postman edit
  
 ![alt text](https://github.com/faisalfs10x/faisalfs10x.github.io/blob/master/asset/htbwriteup/linux/postman/intro.PNG "postman intro")
