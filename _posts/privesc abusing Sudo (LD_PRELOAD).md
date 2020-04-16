@@ -1,14 +1,13 @@
 ## privesc abusing Sudo (LD_PRELOAD)
 
-> **noobuser@attackdefense:~$** id
+    noobuser@attackdefense:~$ id
     uid=999(noobuser) gid=999(noobuser) groups=999(noobuser)
-> 
-> 
-> **noobuser@attackdefense:~$** sudo -l
+    noobuser@attackdefense:~$ sudo -l
     Matching Defaults entries for noobuser on attackdefense:
-        env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin, ***env_keep+=LD_PRELOAD***
-User noobuser may run the following commands on attackdefense:
-(root) NOPASSWD: ***/usr/sbin/apache2***
+        env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin, 
+        env_keep+=LD_PRELOAD
+    User noobuser may run the following commands on attackdefense:
+        (root) NOPASSWD: /usr/sbin/apache2
 
 then write C program in the writtable directory such as /var/tmp , /dev/shm and /tmp directory and save it to LD_PRELOAD_privesc.c
 
