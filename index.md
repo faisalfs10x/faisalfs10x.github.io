@@ -12,7 +12,7 @@ layout: default
 - Write-up
   - [HackTheBox](/htb) writeups
   - [writeypostman](/htbPostman)
-  - [notes](/notes)
+  - [notes](/notes/)
   
 - Notes
 
