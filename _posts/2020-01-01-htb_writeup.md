@@ -1,12 +1,20 @@
 ---
 layout: post
-title: "Postman write-up"
-date: 2020-03-22 00:22:00 -0000
+title: "htb writeup"
+date: 2020-01-01 00:22:00 -0000
 categories: jekyll
 permalink: /htb
-exploit: Redis 4.0.9 | MiniServ 1.910 (Webmin httpd)
-tags: [redis, webmin, miniserv]
+tags: [htb, writeup, machine]
 
 ---
+[homepage](/faisalfs10x.github.io/index)  
 
-# htb writeup here
+## HTB machines:
+- ### Linux
+  -- [HTB - Postman](/htb/htbPostman)
+  -- [HTB - OpenAdmin]/htb/htbOpenadmin)
+  -- [HTB - Obscurity](/htb/htbObscurity)
+  
+## HTB challenge:
+- ### Web)
+-- [Learnaen](/htb/htbPostman).
