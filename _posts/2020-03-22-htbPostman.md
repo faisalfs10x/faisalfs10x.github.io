@@ -30,7 +30,7 @@ Then, I found [Redis RCE exploit](https://packetstormsecurity.com/files/134200/R
 After that we can SSH into redis user on the box.
 ![alt text](https://github.com/faisalfs10x/faisalfs10x.github.io/blob/master/asset/htbwriteup/linux/postman/4.png)
 
-However, we could not read `user.txt` yet. We need to escalate to `Matt` user.
+However, we could not read `user.txt` yet. We need to escalate to `Matt` user first.
 ![alt text](https://github.com/faisalfs10x/faisalfs10x.github.io/blob/master/asset/htbwriteup/linux/postman/5.png)
 
 While doing enumeration, we found `id_rsa.bak` file in `/opt` that is an id_rsa backup for user Matt.
