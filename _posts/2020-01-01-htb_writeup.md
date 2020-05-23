@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "htb writeup"
+title: "HTB writeup"
 date: 2020-01-01 00:22:00 -0000
 categories: jekyll
 permalink: /htb
@@ -9,6 +9,7 @@ tags: [htb, writeup, machine]
 ---
 [homepage](/faisalfs10x.github.io/index)  
 
+[My HTB profile](https://www.hackthebox.eu/profile/133269)
 ## HTB machines:
 ### Linux:
   - [HTB - Postman](/htb/htbPostman)
