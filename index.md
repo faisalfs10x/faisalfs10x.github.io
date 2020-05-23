@@ -11,7 +11,7 @@ layout: default
 ### Categories
 - Write-up
   - [HackTheBox](/htb) writeups
-  - [CTF.live](/htbPostman)
+  - [CTF.live](/ctf.live)
   - [Other](/notes)
   
 - Notes
