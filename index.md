@@ -6,11 +6,11 @@ layout: default
 
 ---
 ### Whoami
-- [about me](/whoami)
+- [About me](/whoami)
 
 ### Categories
 - Write-up
-  - [HackTheBox](/page/writeup/htbpostman) writeups
+  - [HackTheBox](/HTB/htbObscurity) writeups
   - [writeypostman](/htbPostman)
   - [notes](/notes)
   
