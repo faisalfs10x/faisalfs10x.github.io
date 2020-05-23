@@ -3,8 +3,9 @@ layout: post
 title: "OpenAdmin write-up"
 date: 2020-03-25 00:22:00 -0000
 categories: jekyll
-permalink: htbOpenAdmin
+permalink: /htb/htbOpenAdmin
 exploit: RCE
+tags: [OpenNetAdmin, nano bin]
 
 ---
 
