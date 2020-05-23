@@ -18,6 +18,8 @@ layout: default
   - [Forensic](notes)
 
 - Project
+  - [current project](/project)
+  
 - Linux tutorial
 
 Do follow me on [github](https://github.com/faisalfs10x)
