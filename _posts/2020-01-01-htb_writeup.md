@@ -15,12 +15,23 @@ tags: [htb, writeup, machine]
   - [HTB - OpenAdmin](/htb/htbOpenadmin)
   - [HTB - Obscurity](/htb/htbObscurity)
   - [HTB - Mango](/htb/htbMango)
+  - [HTB - Traceback](/htb/htbTraceback) 
   - [HTB - Remote](/htb/htbRemote) 
+  - [HTB - Traverxec](/htb/htbTraverxec)
+  - [HTB - Resolute](/htb/htbResolute)
+  - [HTB - Admirer](/htb/htbAdmirer)
+
+  
   
 - ### Windows
   - [HTB - Forest](/htb/htbForest)
   - [HTB - Servmon](/htb/htbServmon)
-
+  - [HTB - Sauna](/htb/htbSauna)
+  - [HTB - Nest](/htb/htbNest)
+  - [HTB - Monteverde](/htb/htbMonteverde)
+  
+  
+  
 ## HTB challenge:
 - ### Web)
 -- [Learnaen](/htb/htbPostman).
