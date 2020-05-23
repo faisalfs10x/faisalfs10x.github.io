@@ -2,7 +2,8 @@
 layout: default
 title: "htb writeup"
 categories: jekyll
-permalink : htb
+permalink : /htb
+
 ---
 
 [homepage](/faisalfs10x.github.io/index)  
