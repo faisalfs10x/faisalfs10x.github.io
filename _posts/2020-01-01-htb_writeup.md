@@ -10,7 +10,7 @@ tags: [htb, writeup, machine]
 [homepage](/faisalfs10x.github.io/index)  
 
 ## HTB machines:
-### Linux
+### Linux:
   - [HTB - Postman](/htb/htbPostman)
   - [HTB - OpenAdmin](/htb/htbOpenadmin)
   - [HTB - Obscurity](/htb/htbObscurity)
@@ -22,7 +22,7 @@ tags: [htb, writeup, machine]
   - [HTB - Admirer](/htb/htbAdmirer)
 
 
-### Windows
+### Windows:
   - [HTB - Forest](/htb/htbForest)
   - [HTB - Servmon](/htb/htbServmon)
   - [HTB - Sauna](/htb/htbSauna)
@@ -32,5 +32,5 @@ tags: [htb, writeup, machine]
   
   
 ## HTB challenge:
-### Web)
+### Web:
   - [Learnaen](/htb/htbPostman).
