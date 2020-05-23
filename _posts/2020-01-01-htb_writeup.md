@@ -15,6 +15,11 @@ tags: [htb, writeup, machine]
   - [HTB - OpenAdmin](/htb/htbOpenadmin)
   - [HTB - Obscurity](/htb/htbObscurity)
   
+  
+- ### Windows
+
+
+
 ## HTB challenge:
 - ### Web)
 -- [Learnaen](/htb/htbPostman).
