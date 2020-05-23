@@ -12,7 +12,9 @@ tags: [htb, writeup, machine]
 ## HTB machines:
 - ### Linux
   -- [HTB - Postman](/htb/htbPostman)
+  
   -- [HTB - OpenAdmin](/htb/htbOpenadmin)
+  
   -- [HTB - Obscurity](/htb/htbObscurity)
   
 ## HTB challenge:
