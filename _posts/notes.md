@@ -2,7 +2,8 @@
 layout: default
 title: "notes"
 categories: jekyll
-permalink : notes
+permalink : /notes
+
 ---
 
 [homepage](/faisalfs10x.github.io/index)  
