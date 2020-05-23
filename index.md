@@ -12,12 +12,12 @@ layout: default
 - Write-up
   - [HackTheBox](/htb) writeups
   - [CTF.live](/ctf.live)
-  - [Other](/notes)
   
 - Notes
   - [Pentest](notes)
   - [Forensic](notes)
 
+- Project
 - Linux tutorial
 
 Do follow me on [github](https://github.com/faisalfs10x)
