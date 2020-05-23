@@ -1,3 +1,13 @@
+---
+layout: post
+title: "notes-simple-ctf pentesting-guide"
+date: 2020-02-10 00:22:00 -0000
+categories: jekyll
+permalink: /htb/htbctf
+tags: [note, htb, pentest]
+
+---
+
 # notes-simple-ctf pentesting-guide | [my HTB profile](https://www.hackthebox.eu/profile/133269)
 some notes i gathered online when doing ctf pentesting. Super credit to all pages that have been mentioned.
 - https://book.hacktricks.xyz/
