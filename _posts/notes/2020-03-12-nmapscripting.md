@@ -1,3 +1,13 @@
+---
+layout: post
+title: "notes-nmap-scripting"
+date: 2020-02-10 00:22:00 -0000
+categories: jekyll
+permalink: /htb/nmap
+tags: [note, htb, nmap]
+
+---
+
 # notes-nmap-scripting
 Notes i gathered after reading Practical Web Penetration Testing - Gus Khawaja. Service probing and enumeration In the preceding step, we used the Nmap script to quickly probe each service that we found. In this step, we will take this information to the next step and try to probe aggressively. The Nmap scripts that we will use in the following examples are both very aggressive and time-consuming: 
 
