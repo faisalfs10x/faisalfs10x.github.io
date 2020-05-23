@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "PrivEsc abusing WGET SUID"
-date: 2020-04-17 00:22:00 -0000
+date: 2020-04-04 00:22:00 -0000
 categories: jekyll
 permalink: /ctf.live/wgetsuid
 tags: [privesc, wget, SUID]
