@@ -28,6 +28,7 @@ Then, I found [Redis RCE exploit](https://packetstormsecurity.com/files/134200/R
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/3.png)
 
+
 #### Redis user to Matt:
 
 After that we can SSH into redis user on the box. However, we could not read `user.txt` yet. We need to escalate to `Matt` user first.
@@ -36,13 +37,16 @@ After that we can SSH into redis user on the box. However, we could not read `us
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/5.png)
 
+
 While doing enumeration, we found `id_rsa.bak` file in `/opt` that is an id_rsa backup for user Matt.
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/6.png)
 
+
 Then, we copied the `id_rsa` content into local machine to crack the key.
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/7.png)
+
 
 #### Cracking id_rsa key:
 
@@ -50,22 +54,27 @@ We have to convert the key to ssh using `ssh2john.py` first before cracking the 
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/8.png)
 
+
 We are able to crack the key and got `computer2008` as the key.
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/9.png)
+
 
 Then, we tried to SSH as user Matt but the connection was closed by the server.
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/10.png)
 
+
 However, we could escalate into Matt by substitute user and read the `user.txt` flag.
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/11.png)
+
 
 ### Privilege escalation
 Based on nmap scan, we found that `Webmin 1.910 service on port 10000` was up. By using searchsploit, we found RCE exploit in Metasploit module.
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/12.png)
+
 
 We filled all the required setting for the module using same credential for Matt user and got root shell.
 
