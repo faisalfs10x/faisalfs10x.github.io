@@ -4,8 +4,10 @@ title: "Postman write-up"
 date: 2020-03-22 00:22:00 -0000
 categories: jekyll
 permalink: htbPostman
+exploit: Redis 4.0.9 | MiniServ 1.910 (Webmin httpd)
 
 ---
+
 # HTB - Postman
 
 ![alt text](https://github.com/faisalfs10x/faisalfs10x.github.io/blob/master/asset/htbwriteup/linux/postman/intro.PNG "postman intro")
@@ -19,14 +21,16 @@ From the nmap scan, I discovered uncommon ports that are 6379 and 10000, Redis k
 Then, I found [Redis RCE exploit](https://packetstormsecurity.com/files/134200/Redis-Remote-Command-Execution.html) from Packet Storm Security. We could exploit unauthenticated Redis server by writing a content inside the memory of Redis server. We have to create our own SSH keys and insert the public key inside the Redis server to be able SSH into the box.
 ![alt text](https://github.com/faisalfs10x/faisalfs10x.github.io/blob/master/asset/htbwriteup/linux/postman/2.png)
 
-##### Writing the Public Key into Memory using redis-CLI:
+#### Writing the Public Key into Memory using redis-CLI:
+
 ![alt text](https://github.com/faisalfs10x/faisalfs10x.github.io/blob/master/asset/htbwriteup/linux/postman/3.png)
 
-##### Redis user to Matt:
-After that we can SSH into redis user on the box.
-![alt text](https://github.com/faisalfs10x/faisalfs10x.github.io/blob/master/asset/htbwriteup/linux/postman/4.png).
+#### Redis user to Matt:
 
-However, we could not read `user.txt` yet. We need to escalate to user `Matt`.
+After that we can SSH into redis user on the box.
+![alt text](https://github.com/faisalfs10x/faisalfs10x.github.io/blob/master/asset/htbwriteup/linux/postman/4.png)
+
+However, we could not read `user.txt` yet. We need to escalate to `Matt` user.
 ![alt text](https://github.com/faisalfs10x/faisalfs10x.github.io/blob/master/asset/htbwriteup/linux/postman/5.png)
 
 While doing enumeration, we found `id_rsa.bak` file in `/opt` that is an id_rsa backup for user Matt.
@@ -35,7 +39,8 @@ While doing enumeration, we found `id_rsa.bak` file in `/opt` that is an id_rsa 
 Then, we copied the `id_rsa` content into local machine to crack the key.
 ![alt text](https://github.com/faisalfs10x/faisalfs10x.github.io/blob/master/asset/htbwriteup/linux/postman/7.png)
 
-##### Cracking id_rsa key:
+#### Cracking id_rsa key:
+
 We have to convert the key to ssh using `ssh2john.py` first before cracking the key.
 ![alt text](https://github.com/faisalfs10x/faisalfs10x.github.io/blob/master/asset/htbwriteup/linux/postman/8.png)
 
