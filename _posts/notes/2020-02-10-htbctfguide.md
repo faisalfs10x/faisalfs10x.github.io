@@ -3,7 +3,7 @@ layout: post
 title: "notes-simple-ctf pentesting-guide"
 date: 2020-02-10 00:22:00 -0000
 categories: jekyll
-permalink: /htb/htbctf
+permalink: /notes/htbctf
 tags: [note, htb, pentest]
 
 ---
