@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "notes-simple-ctf pentesting-guide"
+title: "notes-simple-ctf pentesting-guide | [my HTB profile](https://www.hackthebox.eu/profile/133269)"
 date: 2020-02-10 00:22:00 -0000
 categories: jekyll
 permalink: /notes/htbctf
@@ -8,7 +8,6 @@ tags: [note, htb, pentest]
 
 ---
 
-# notes-simple-ctf pentesting-guide | [my HTB profile](https://www.hackthebox.eu/profile/133269)
 some notes i gathered online when doing ctf pentesting. Super credit to all pages that have been mentioned.
 - https://book.hacktricks.xyz/
 - https://sushant747.gitbooks.io/total-oscp-guide/
