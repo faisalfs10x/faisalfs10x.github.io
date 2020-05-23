@@ -8,7 +8,7 @@ tags: [note, htb, nmap]
 
 ---
 
-# notes-nmap-scripting
+
 Notes i gathered after reading Practical Web Penetration Testing - Gus Khawaja. Service probing and enumeration In the preceding step, we used the Nmap script to quickly probe each service that we found. In this step, we will take this information to the next step and try to probe aggressively. The Nmap scripts that we will use in the following examples are both very aggressive and time-consuming: 
 
 Gus-khawaja-pratical-web-penetration-testing.pdf
