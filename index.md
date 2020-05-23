@@ -11,10 +11,12 @@ layout: default
 ### Categories
 - Write-up
   - [HackTheBox](/htb) writeups
-  - [writeypostman](/htbPostman)
-  - [notes](/notes/)
+  - [CTF.live](/htbPostman)
+  - [Other](/notes)
   
 - Notes
+  - [Pentest](notes)
+  - [Forensic](notes)
 
 - Linux tutorial
 
