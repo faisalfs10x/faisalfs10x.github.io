@@ -5,6 +5,7 @@ date: 2020-03-22 00:22:00 -0000
 categories: jekyll
 permalink: htbPostman
 exploit: Redis 4.0.9 | MiniServ 1.910 (Webmin httpd)
+tags: redis
 
 ---
 
@@ -43,14 +44,14 @@ While doing enumeration, we found `id_rsa.bak` file in `/opt` that is an id_rsa 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/6.png)
 
 
-Then, we copied the `id_rsa` content into local machine to crack the key.
+Then, we copied the `id_rsa` content into our local machine to crack the key.
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/7.png)
 
 
 #### Cracking id_rsa key:
 
-We have to convert the key to ssh using `ssh2john.py` first before cracking the key.
+We have to convert the format using john utility called `ssh2john` first before cracking the key. ssh2john can converts the private key to a format that john can crack it.
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/8.png)
 
