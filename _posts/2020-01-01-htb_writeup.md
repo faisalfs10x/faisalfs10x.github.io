@@ -14,11 +14,12 @@ tags: [htb, writeup, machine]
   - [HTB - Postman](/htb/htbPostman)
   - [HTB - OpenAdmin](/htb/htbOpenadmin)
   - [HTB - Obscurity](/htb/htbObscurity)
-  
+  - [HTB - Mango](/htb/htbMango)
+  - [HTB - Remote](/htb/htbRemote) 
   
 - ### Windows
-
-
+  - [HTB - Forest](/htb/htbForest)
+  - [HTB - Servmon](/htb/htbServmon)
 
 ## HTB challenge:
 - ### Web)
