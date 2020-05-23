@@ -3,7 +3,7 @@ layout: post
 title: "notes-nmap-scripting"
 date: 2020-02-10 00:22:00 -0000
 categories: jekyll
-permalink: /htb/nmap
+permalink: /notes/nmap
 tags: [note, htb, nmap]
 
 ---
