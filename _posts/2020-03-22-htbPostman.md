@@ -6,10 +6,12 @@ categories: jekyll
 permalink: htbPostman
 
 ---
+# HTB - Postman
 
-
-#### Postman edit
- 
 ![alt text](https://github.com/faisalfs10x/faisalfs10x.github.io/blob/master/asset/htbwriteup/linux/postman/intro.PNG "postman intro")
 
-### no pic lol
+
+### Recon
+
+    nmap -Pn --open -sC -sV -p- -T4 10.10.10.160
+  ![alt text](https://github.com/faisalfs10x/faisalfs10x.github.io/blob/master/asset/htbwriteup/linux/postman/1.PNG
