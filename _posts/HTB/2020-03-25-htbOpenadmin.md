@@ -1,12 +1,15 @@
 ---
-layout: post
+layout: single
 title: "OpenAdmin write-up"
 date: 2020-03-25 00:22:00 -0000
-categories: jekyll
+categories: hackthebox
 permalink: /htb/htbOpenadmin
 exploit: RCE
 tags: [OpenNetAdmin, nano bin]
-
+header:
+  teaser: /asset/htbwriteup/linux/openadmin/intro.png
+  teaser_home_page: true
+  
 ---
 
 # HTB - OpenAdmin
