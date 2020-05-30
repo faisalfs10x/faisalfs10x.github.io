@@ -11,12 +11,12 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme             : "mmistakes/minimal-mistakes@4.15.1"
+#remote_theme             : "mmistakes/minimal-mistakes@4.15.1"
 minimal_mistakes_skin    : "dark" # "haxor" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "[ FaisalFs.io ]"
+title                    : "[ FaisalFs ]"
 subtitle                 : "Version 2.0"
 title_separator          : "-"
 name                     : "faisalfs10x"
@@ -273,3 +273,11 @@ defaults:
       comments: true
       share: true
       related: true
+   
+ # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+        layout: single
+        author_profile: true
