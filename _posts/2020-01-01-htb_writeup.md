@@ -1,8 +1,8 @@
 ---
-layout: post
-title: "HTB writeup"
+layout: deafault
+title: "HackTheBox Writeup"
 date: 2020-01-01 00:22:00 -0000
-categories: jekyll
+categories: htb
 permalink: /htb
 tags: [htb, writeup, machine]
 
