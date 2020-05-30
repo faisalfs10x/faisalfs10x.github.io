@@ -2,7 +2,7 @@
 layout: single
 title: "PrivEsc abusing Sudo (LD_PRELOAD)"
 date: 2020-04-17 00:22:00 -0000
-categories: ctflive, privesc
+categories: ctflive privesc
 permalink: /ctflive/sudo
 tags: [privesc, LD_PRELOAD, linux]
 
