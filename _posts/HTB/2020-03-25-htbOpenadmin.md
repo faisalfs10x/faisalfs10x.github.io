@@ -15,7 +15,7 @@ header:
 # HTB - OpenAdmin
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/openadmin/intro.png "openadmin intro")
-### Recon
+## Recon
     nmap -Pn -sV --script vulners --script-args mincvss=7.0 -p22,80 10.10.10.171 
     
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/openadmin/0.png)
@@ -36,12 +36,12 @@ header:
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/openadmin/4.png)
 
-### Exploit
+## Exploit
 - First, we have to convert the bash script using `dos2unix` and feed the script with URL argument and we got the `www-data shell`.
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/openadmin/5.png)
 
-#### Discover interesting database configuration files that lead to jimmy shell:
+### Discover interesting database configuration files that lead to jimmy shell:
 - In the box, we do some enumeration until we found interesting database configuration file in **/opt/ona/www/local/config** and we get mysql database config file. Noted that for the `db_passwd`. It seems the password is for database but it might be useful for the users. We also discovered some users on the box that are `jimmy` and `joanna`
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/openadmin/6.png)
@@ -56,7 +56,7 @@ header:
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/openadmin/9.png)
 
-#### Cracking id_rsa and recover the key to gain joanna shell:
+### Cracking id_rsa and recover the key to gain joanna shell:
 - Again, copied the id_rsa content to local machine into `hash.txt` and tried to crack the key using `john` and we got **bloodninjas** as the key. Yuhuuuu!!
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/openadmin/10.png)
@@ -65,7 +65,7 @@ header:
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/openadmin/11.png)
 
-### Privilege escalation
+## Privilege escalation
 
 - To escalate we tried basic enum using `sudo -l` and found that joanna can run `/bin/nano /opt/priv` without any password.
 
