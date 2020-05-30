@@ -2,14 +2,15 @@
 layout: single
 title: "OpenAdmin write-up"
 date: 2020-03-25 00:22:00 -0000
-categories: hackthebox
-permalink: /htb/htbOpenadmin
-exploit: RCE
-tags: [OpenNetAdmin, nano bin]
+classes: wide
 header:
   teaser: /asset/htbwriteup/linux/openadmin/intro.png
   teaser_home_page: true
   icon: /assets/hackthebox.webp
+categories: hackthebox
+permalink: /htb/htbOpenadmin
+exploit: RCE
+tags: [OpenNetAdmin, nano bin]
   
 ---
 
