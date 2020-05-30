@@ -2,14 +2,15 @@
 layout: single
 title: "Postman write-up"
 date: 2020-03-22 00:22:00 -0000
-categories: hackthebox
 classes: wide
-permalink: /htb/htbPostman
-exploit: Redis 4.0.9 | MiniServ 1.910 (Webmin httpd)
-tags: [redis, webmin, miniserv]
 header:
   teaser: /asset/htbwriteup/linux/postman/intro.PNG
   teaser_home_page: true
+  icon: /assets/hackthebox.webp
+categories: hackthebox
+permalink: /htb/htbPostman
+exploit: Redis 4.0.9 | MiniServ 1.910 (Webmin httpd)
+tags: [redis, webmin, miniserv]
 
 ---
 
@@ -29,12 +30,12 @@ Then, I found [Redis RCE exploit](https://packetstormsecurity.com/files/134200/R
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/2.png)
 
-#### Writing the Public Key into Memory using redis-CLI:
+### Writing the Public Key into Memory using redis-CLI:
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/3.png)
 
 
-#### Redis user to Matt:
+### Redis user to Matt:
 
 After that we can SSH into redis user on the box. However, we could not read `user.txt` yet. We need to escalate to `Matt` user first.
 
@@ -53,7 +54,7 @@ Then, we copied the `id_rsa` content into our local machine to crack the key.
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/7.png)
 
 
-#### Cracking id_rsa key:
+### Cracking id_rsa key:
 
 We have to convert the format using john utility called `ssh2john` first before cracking the key. ssh2john can converts the private key to a format that john can crack it.
 
