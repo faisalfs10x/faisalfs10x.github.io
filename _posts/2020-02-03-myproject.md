@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 title: "My Project"
 date: 2020-02-03 00:22:00 -0000
 categories: project
