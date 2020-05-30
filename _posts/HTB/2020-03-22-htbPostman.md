@@ -1,11 +1,14 @@
 ---
-layout: post
+layout: single
 title: "Postman write-up"
 date: 2020-03-22 00:22:00 -0000
-categories: jekyll
+categories: hackthebox
+classes: wide
 permalink: /htb/htbPostman
 exploit: Redis 4.0.9 | MiniServ 1.910 (Webmin httpd)
 tags: [redis, webmin, miniserv]
+header:
+  teaser: /asset/htbwriteup/linux/postman/intro.PNG
 
 ---
 
