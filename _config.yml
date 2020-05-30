@@ -102,8 +102,8 @@ analytics:
 # Site Author
 author:
   name             : "faisalfs10x"
-  avatar           : "/assets/avatar.png"
-  bio              : "Cyber Security Enthusiast, <br>CTF player<br>HackTheBox"
+  avatar           : "/assets/avatar.jpg"
+  bio              : "Cyber Security Enthusiast,<br>CTF Player<br>HackTheBox"
   location         : "Malaysia"
   email            : "nope"
   uri              :
