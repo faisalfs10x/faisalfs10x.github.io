@@ -1,5 +1,5 @@
 ---
 title: "About"
-permalink: /about/
+permalink: /whoami/
 date: 2019-02-15
 ---
