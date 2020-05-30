@@ -9,6 +9,7 @@ exploit: Redis 4.0.9 | MiniServ 1.910 (Webmin httpd)
 tags: [redis, webmin, miniserv]
 header:
   teaser: /asset/htbwriteup/linux/postman/intro.PNG
+  teaser_home_page: true
 
 ---
 
@@ -16,14 +17,14 @@ header:
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/intro.PNG "postman intro")
 
-### Recon
+## Recon
     nmap -Pn --open -sC -sV -p- -T4 10.10.10.160 
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/1.png)
 
 From the nmap scan, I discovered uncommon ports that are 6379 and 10000, Redis key-value store 4.0.9 and http MiniServ 1.910 (Webmin httpd) respectively.
 
-### Exploit
+## Exploit
 Then, I found [Redis RCE exploit](https://packetstormsecurity.com/files/134200/Redis-Remote-Command-Execution.html) from Packet Storm Security. We could exploit unauthenticated Redis server by writing a content inside the memory of Redis server. We have to create our own SSH keys and insert the public key inside the Redis server to be able SSH into the box.
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/2.png)
@@ -74,7 +75,7 @@ However, we could escalate into Matt by substitute user and read the `user.txt` 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/11.png)
 
 
-### Privilege escalation
+## Privilege escalation
 Based on nmap scan, we found that `Webmin 1.910 service on port 10000` was up. By using searchsploit, we found RCE exploit in Metasploit module.
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/12.png)
