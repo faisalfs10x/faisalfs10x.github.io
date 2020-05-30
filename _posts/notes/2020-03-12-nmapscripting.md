@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: single
 title: "notes-nmap-scripting"
 date: 2020-02-10 00:22:00 -0000
-categories: jekyll
+classes: wide
+categories: notes network
 permalink: /notes/nmap
 tags: [note, htb, nmap]
 
