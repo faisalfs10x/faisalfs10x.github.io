@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 title: "HackTheBox Writeup"
 classes: wide
 date: 2020-01-01 00:22:00 -0000
