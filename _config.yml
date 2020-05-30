@@ -101,10 +101,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "faisalfs10x"
+  name             : "Faisal Fs"
   avatar           : "/assets/avatar.jpg"
-  bio              : "Cyber Security Enthusiast<br>CTF Player<br>HackTheBox"
-  bio              : "Cyber security, networking and CTF blog XD"
+  bio              : "Cyber-security, networking and CTF blog XD<br><br><br>Cyber Security Enthusiast<br>CTF Player"
+  #bio              : "Cyber security, networking and CTF blog XD"
   location         : "Malaysia"
   email            : "nope"
   uri              :
