@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: default
 title: "My Project"
 date: 2020-02-03 00:22:00 -0000
-categories: jekyll
+categories: project
 permalink: /project
 tags: [project, tool]
 
