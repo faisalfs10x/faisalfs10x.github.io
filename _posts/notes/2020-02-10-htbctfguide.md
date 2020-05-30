@@ -3,7 +3,7 @@ layout: single
 title: "notes-simple-ctf pentesting-guide | [my HTB profile](https://www.hackthebox.eu/profile/133269)"
 date: 2020-02-10 00:22:00 -0000
 classes: wide
-categories: notes
+categories: notes network
 permalink: /notes/htbctf
 tags: [note, htb, pentest]
 
