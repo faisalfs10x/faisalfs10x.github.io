@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: single
 title: "notes-simple-ctf pentesting-guide | [my HTB profile](https://www.hackthebox.eu/profile/133269)"
 date: 2020-02-10 00:22:00 -0000
-categories: jekyll
+classes: wide
+categories: notes
 permalink: /notes/htbctf
 tags: [note, htb, pentest]
 
