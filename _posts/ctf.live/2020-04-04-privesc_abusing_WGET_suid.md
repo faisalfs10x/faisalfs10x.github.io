@@ -2,7 +2,7 @@
 layout: single
 title: "PrivEsc abusing WGET SUID"
 date: 2020-04-04 00:22:00 -0000
-categories: ctflive, privesc
+categories: ctflive privesc
 permalink: /ctflive/wgetsuid
 tags: [privesc, wget, SUID]
 
