@@ -1,8 +1,9 @@
 ---
-layout: deafault
+layout: default
 title: "HackTheBox Writeup"
+classes: wide
 date: 2020-01-01 00:22:00 -0000
-categories: htb
+categories: hackthebox
 permalink: /htb
 tags: [htb, writeup, machine]
 
