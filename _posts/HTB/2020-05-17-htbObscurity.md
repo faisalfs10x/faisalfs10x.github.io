@@ -2,13 +2,14 @@
 layout: single
 title: "Obscurity write-up"
 date: 2020-05-17 00:22:00 -0000
-categories: hackthebox
 classes: wide
-permalink: /htb/htbObscurity
-tags: [python, source code, encryption, decryption]
 header:
   teaser: /asset/htbwriteup/linux/obscurity/intro.png
   teaser_home_page: true
+  icon: /assets/hackthebox.webp
+categories: hackthebox
+permalink: /htb/htbObscurity
+tags: [python, source code, encryption, decryption]
 
 ---
 
@@ -221,7 +222,7 @@ Here:
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/obscurity/8.png)
 
-#### www-data to robert shell:
+### www-data to robert shell:
 - We list all the files on robert directory.
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/obscurity/9.png)
@@ -250,7 +251,7 @@ Here:
 
 - To escalate we tried basic enum using `sudo -l` and found that `robert` can run `BetterSSH.py` without any password as `root`.
 
-#### getting shadow file for cracking process:
+### getting shadow file for cracking process:
 Here is the snip of main content in `BetterSSH.py`:
 	
 	session['user'] = input("Enter username: ")
