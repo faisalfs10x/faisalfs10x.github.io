@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "haxor" # "air", "aqua", "contrast", "dark", "dirt", 
 locale                   : "en-US"
 title                    : "faisalfs10x.io"
 title_separator          : "-"
-name                     : "de7fx"
+name                     : "noNAME"
 description              : "Cyber security, networking and CTF blog XD"
 url                      : "https://faisalfs10x.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -103,7 +103,7 @@ analytics:
 author:
   name             : "faisalfs10x"
   avatar           : "/assets/avatar.png"
-  bio              : "Cyber Security Enthusiast, CTF player<br>HackTheBox"
+  bio              : "Cyber Security Enthusiast, <br>CTF player<br>HackTheBox"
   location         : "Malaysia"
   email            : "nope"
   uri              :
