@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "haxor" # "air", "aqua", "contrast", "dark", "dirt", 
 
 # Site Settings
 locale                   : "en-US"
-title                    : "[ faisalfs.io ]"
+title                    : "[ FaisalFs.io ]"
 title_separator          : "-"
-name                     : "noNAME"
+name                     : "faisalfs10x"
 description              : "Cyber security, networking and CTF blog XD"
 url                      : "https://faisalfs10x.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -117,7 +117,7 @@ author:
   github           : "faisalfs10x"
   gitlab           :
   google_plus      :
-  keybase          : "faisalfs10x"
+  keybase          : 
   instagram        :
   lastfm           :
   linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
@@ -130,7 +130,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/faisalfs10x"
+  youtube          : 
 
 
 # Reading Files
@@ -266,7 +266,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: false
+      read_time: true
       comments: false
-      share: false
+      share: true
       related: true
