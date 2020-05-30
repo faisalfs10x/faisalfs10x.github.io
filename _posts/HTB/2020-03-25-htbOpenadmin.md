@@ -9,6 +9,7 @@ tags: [OpenNetAdmin, nano bin]
 header:
   teaser: /asset/htbwriteup/linux/openadmin/intro.png
   teaser_home_page: true
+  icon: /assets/hackthebox.webp
   
 ---
 
