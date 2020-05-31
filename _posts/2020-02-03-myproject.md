@@ -10,7 +10,7 @@ tags: [project, tool]
 [homepage](/faisalfs10x.github.io/index)  
 
 ### Recent:
-  - [liveHostPortScanner](https://github.com/faisalfs10x/live_host_port_scanner)
+  - [liveHostPortScanner](https://faisalfs10x.github.io/pro_scan#)
   - [cleanTask.bat script](https://github.com/faisalfs10x/cleanTask.bat)
   - [python-scanning-tool](https://github.com/faisalfs10x/HACKING-TECHNIQUES-AND-PREVENTION-python-scanning-tool)
   - [PHP-Web-Development](https://github.com/faisalfs10x/WORKSHOP-1--PHP-Web-Development-MYCC_ComputerSale-Service)
