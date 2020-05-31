@@ -11,7 +11,7 @@ tags: [project, tool]
 
 ### Recent:
   - [liveHostPortScanner](https://faisalfs10x.github.io/pro_scan#)
-  - [cleanTask.bat script](https://github.com/faisalfs10x/cleanTask.bat)
+  - [cleanTask.bat script](https://faisalfs10x.github.io/pro_batch#)
   - [python-scanning-tool](https://github.com/faisalfs10x/HACKING-TECHNIQUES-AND-PREVENTION-python-scanning-tool)
   - [PHP-Web-Development](https://github.com/faisalfs10x/WORKSHOP-1--PHP-Web-Development-MYCC_ComputerSale-Service)
   - [caesar-cipher](https://github.com/faisalfs10x/HACKING-TECHNIQUES-AND-PREVENTION-cryptography-caesar-cipher) 
