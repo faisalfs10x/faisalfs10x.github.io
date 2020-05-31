@@ -12,25 +12,23 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes@4.15.1"
-minimal_mistakes_skin    : "haxor" # "haxor" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "haxor" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "[ FaisalFs.io ]"
-subtitle                 : "Version 2.0"
 title_separator          : "-"
-name                     : "faisalfs10x"
-description              : "Cyber security, networking and CTF blog XD"
-url                      : "https://faisalfs10x.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "Snowscan"
+description              : "Posts about security, CTFs and networking"
+url                      : "https://snowscan.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "faisalfs10x/faisalfs10x.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-logo                     : "/assets/header.jpg"
-masthead_title           : "Hey yo guys ! what's up ?"
+repository               : "slemire/slemire.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+logo                     : "/assets/images/masthead.png"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
-comments: false
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+comments:
+  provider               : false # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -61,7 +59,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : true # true, false (default)
+search                   : # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -103,12 +101,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Faisal Fs"
-  avatar           : "/assets/avatar.jpg"
-  bio              : "Blog of cyber-security, networking and CTF XD<br><br>- Cyber Security Enthusiast<br>- CTF Player"
-  #bio              : "Cyber security, networking and CTF blog XD"
-  location         : "Somewhere, Malaysia"
-  email            : "nope"
+  name             : "Snowscan"
+  avatar           : "/assets/images/avatar.png"
+  bio              : "Pentester, CTF player<br>HackTheBox ATeam"
+  location         : "Canada"
+  email            : "info@snowscan.io"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -117,10 +114,10 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "faisalfs10x"
+  github           : "slemire"
   gitlab           :
   google_plus      :
-  keybase          : 
+  keybase          : "snowscan"
   instagram        :
   lastfm           :
   linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
@@ -129,11 +126,11 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          : "faisalfs10x"
+  twitter          : "snowscan"
   vine             :
   weibo            :
   xing             :
-  youtube          : 
+  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
 
 
 # Reading Files
@@ -269,15 +266,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
-      share: true
+      read_time: false
+      comments: false
+      share: false
       related: true
-   
- # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-        layout: single
-        author_profile: true
