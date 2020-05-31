@@ -4,7 +4,7 @@ main:
   - title: "Posts"
     url: /year-archive/
   - title: "HackTheBox WriteUp"
-    url: https://faisalfs10x.github.io/htb
+    url: https://faisalfs10x.github.io/htb#
   - title: "Categories"
     url: /categories/
   - title: "Tags"
