@@ -14,7 +14,7 @@ tags: [project, tool]
   - [cleanTask.bat script](https://faisalfs10x.github.io/pro_batch#)
   - [python-scanning-tool](https://faisalfs10x.github.io/pro_pyscan#)
   - [PHP-Web-Development](https://faisalfs10x.github.io/pro_phpweb#)
-  - [caesar-cipher](https://github.com/faisalfs10x/HACKING-TECHNIQUES-AND-PREVENTION-cryptography-caesar-cipher) 
-  - [Intruder Detection System OpenCV](https://github.com/faisalfs10x/ARTIFICIAL-INTELLIGENCE_finalProject-Intruder-Detection-System-based-on-Face-Recognition) 
+  - [caesar-cipher](https://faisalfs10x.github.io/pro_pycaesar#) 
+  - [Intruder Detection System OpenCV](https://faisalfs10x.github.io/pro_pyIDS) 
 
   
