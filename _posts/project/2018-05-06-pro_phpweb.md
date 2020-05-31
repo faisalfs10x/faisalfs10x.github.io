@@ -23,14 +23,14 @@ During my workshop 1 project, i have developed a website for my previous interns
 ## Source code:
 - [Full source code](https://github.com/faisalfs10x/WORKSHOP-1--PHP-Web-Development-MYCC_ComputerSale-Service/tree/master/Aplikasi/MYCC)
 
-![Screenshot](https://github.com/faisalfs10x/WORKSHOP-1--PHP-Web-Development-MYCC_ComputerSale-Service/blob/master/screenshot/structurechart.PNG)
+![Screenshot](https://raw.githubusercontent.com/faisalfs10x/WORKSHOP-1--PHP-Web-Development-MYCC_ComputerSale-Service/master/screenshot/structurechart.PNG)
 
-![Screenshot](https://github.com/faisalfs10x/WORKSHOP-1--PHP-Web-Development-MYCC_ComputerSale-Service/blob/master/screenshot/ERD.PNG)
+![Screenshot](https://raw.githubusercontent.com/faisalfs10x/WORKSHOP-1--PHP-Web-Development-MYCC_ComputerSale-Service/master/screenshot/ERD.PNG)
 
-![Screenshot](https://github.com/faisalfs10x/WORKSHOP-1--PHP-Web-Development-MYCC_ComputerSale-Service/blob/master/screenshot/registerEmp.PNG)
+![Screenshot](https://raw.githubusercontent.com/faisalfs10x/WORKSHOP-1--PHP-Web-Development-MYCC_ComputerSale-Service/master/screenshot/registerEmp.PNG)
 
-![Screenshot](https://github.com/faisalfs10x/WORKSHOP-1--PHP-Web-Development-MYCC_ComputerSale-Service/blob/master/screenshot/reportinterface.PNG)
+![Screenshot](https://raw.githubusercontent.com/faisalfs10x/WORKSHOP-1--PHP-Web-Development-MYCC_ComputerSale-Service/master/screenshot/reportinterface.PNG)
 
-![Screenshot](https://github.com/faisalfs10x/WORKSHOP-1--PHP-Web-Development-MYCC_ComputerSale-Service/blob/master/Aplikasi/MYCC/slide2.jpg)
+![Screenshot](https://raw.githubusercontent.com/faisalfs10x/WORKSHOP-1--PHP-Web-Development-MYCC_ComputerSale-Service/master/Aplikasi/MYCC/slide2.jpg)
 
-![Screenshot](https://github.com/faisalfs10x/WORKSHOP-1--PHP-Web-Development-MYCC_ComputerSale-Service/blob/master/Aplikasi/MYCC/slide3.jpg)
+![Screenshot](https://raw.githubusercontent.com/faisalfs10x/WORKSHOP-1--PHP-Web-Development-MYCC_ComputerSale-Service/master/Aplikasi/MYCC/slide3.jpg)
