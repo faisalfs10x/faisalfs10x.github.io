@@ -10,24 +10,27 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-minimal_mistakes_skin    : "haxor" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# theme                  : "minimal-mistakes-jekyll"
+#remote_theme             : "mmistakes/minimal-mistakes@4.15.1"
+minimal_mistakes_skin    : "haxor" # "haxor" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "[ FaisalFs ]"
+subtitle                 : "Version 2.0"
 title_separator          : "-"
 name                     : "faisalfs10x"
 description              : "Cyber security, networking and CTF blog XD"
-url                      : "https://faisalfs10x.github.io"
+url                      : "https://faisalfs10x.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "faisalfs10x/faisalfs10x.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+logo                     : "/assets/header.jpg"
+masthead_title           : "Hey yo guys ! what's up ?"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/header.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "Hey yo guys ! what's up ?" # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs               : true # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
-comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+comments: true
+  provider               : "facebook" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -35,15 +38,12 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            :  # 5 (default)
+    num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
-  utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
   branch                 : # "master"
-  commitMessage          : # "New comment by {fields.name}"
+  commitMessage          : # "New comment."
   filename               : # comment-{@timestamp}
   format                 : # "yml"
   moderation             : # true
@@ -56,7 +56,6 @@ staticman:
       type               : # "date"
       options:
         format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-  endpoint               : # URL of your own deployment with trailing slash, will fallback to the public instance
 reCaptcha:
   siteKey                :
   secret                 :
@@ -69,7 +68,7 @@ algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : false # true (default), false
+  powered_by             : # true (default), false
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
@@ -96,10 +95,10 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : "UA-145129883-1"
+    anonymize_ip         : false # (default)
 
 
 # Site Author
@@ -107,56 +106,34 @@ author:
   name             : "Faisal Fs"
   avatar           : "/assets/avatar.jpg"
   bio              : "Blog of cyber-security, networking and CTF XD<br><br>- Cyber Security Enthusiast<br>- CTF Player"
+  #bio              : "Cyber security, networking and CTF blog XD"
   location         : "Somewhere, Malaysia"
   email            : "nope"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      #url: 
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      #url: 
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: ""
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      #url: ""
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/faisalfs10x"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
-    - label: "Linkedln"
-      icon: "fab fa-fw fa-linkedin"
-      # url: "https://www.linkedin.com/in/"
-
-# Site Footer
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: ""
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      #url: ""
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/faisalfs10x"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url: ""
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url: ""
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: ""
-    - label: "Linkedln"
-      icon: "fab fa-fw fa-linkedin"
-
+  uri              :
+  home             : # null (default), "absolute or relative url to link to author home"
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           : "faisalfs10x"
+  gitlab           :
+  google_plus      :
+  keybase          : 
+  instagram        :
+  lastfm           :
+  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
+  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
+  tumblr           :
+  twitter          : "faisalfs10x"
+  vine             :
+  weibo            :
+  xing             :
+  youtube          : 
 
 
 # Reading Files
@@ -215,7 +192,6 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
@@ -223,7 +199,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /:title/
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -245,7 +221,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-include-cache
 
 
 # Archives
@@ -295,12 +270,11 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
-
-
-  # _pages
+   
+ # _pages
   - scope:
       path: ""
       type: pages
