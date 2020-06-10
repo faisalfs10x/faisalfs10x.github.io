@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "haxor" # "haxor" "air", "aqua", "contrast", "dark", 
 
 # Site Settings
 locale                   : "en-US"
-title                    : "[ FaisalFs ]"
+title                    : "[ FaisalFs.io ]"
 subtitle                 : "Version 2.0"
 title_separator          : "-"
 name                     : "faisalfs10x"
-description              : "Cyber security, networking and CTF blog XD"
+description              : "Blog of Cyber security, networking and CTF XD"
 url                      : "https://faisalfs10x.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "faisalfs10x/faisalfs10x.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -103,7 +103,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Faisal Fs"
+  name             : "Faisal Fsx"
   avatar           : "/assets/avatar.jpg"
   bio              : "Blog of cyber-security, networking and CTF XD<br><br>- Cyber Security Enthusiast<br>- CTF Player"
   #bio              : "Cyber security, networking and CTF blog XD"
