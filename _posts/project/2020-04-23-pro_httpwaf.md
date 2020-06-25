@@ -66,7 +66,7 @@ Http Login Bruteforce python script with WAF fingerprint and Web Protection fing
           -V, --version         					show program's version number and exit
 
 ## Source code:
-- [Get here](https://github.com/faisalfs10x/HTTPwaf-Login-Bruteforce)
+- [Get here](https://github.com/faisalfs10x/HttpWaf-Login-Bruteforce)
 
 ## Output
 
