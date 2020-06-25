@@ -12,7 +12,7 @@ tags: [tool, python, scanner, bruteforce]
 
 Http Login Bruteforce python script with WAF fingerprint and Web Protection fingerprint
 
-## Prerequisite
+### Prerequisite
 
 - request file from burp suite or any tool request intercept
 - CREDENTIALFILE in pair of username:password format
@@ -20,7 +20,7 @@ Http Login Bruteforce python script with WAF fingerprint and Web Protection fing
 - password field
 - invalid message
 
-## Features
+### Features
 
  - Read request file from burp suite or any tool request intercept
  - WAF fingerprint:
@@ -38,18 +38,18 @@ Http Login Bruteforce python script with WAF fingerprint and Web Protection fing
 	 - CSRF token
 
 
-## Tested on 
+### Tested on 
 
  - http://vulnweb.lab.rz.my/user/login.php
  - https://grabme.herokuapp.com/target/
 
 
-## Installation
- 1. Python 3 
- 1. run 'bash install.sh' to auto-install module in requirements.txt
- 2. chmod +x httpwaf.py
+### Installation
+ 1. Python 3
+ 2. git clone https://github.com/faisalfs10x/HttpWaf-Login-Bruteforce
+ 3. run 'bash install.sh' to auto-install module in requirements.txt
 
-## Usage
+### Usage
 
     usage: httpwaf.py [-h] -r REQUESTFILE -c CREDENTIALFILE -u USERFIELD -p PASSFIELD -i INVMSG [-V]
     
@@ -70,5 +70,5 @@ Http Login Bruteforce python script with WAF fingerprint and Web Protection fing
 
 ## Output
 
-![enter image description here](https://raw.githubusercontent.com/faisalfs10x/HTTPwaf-Login-Bruteforce/master/intro.png)
-![enter image description here](https://raw.githubusercontent.com/faisalfs10x/HTTPwaf-Login-Bruteforce/master/bruteforce.png)
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/HttpWaf-Login-Bruteforce/master/intro.png)
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/HttpWaf-Login-Bruteforce/master/bruteforce.png)
