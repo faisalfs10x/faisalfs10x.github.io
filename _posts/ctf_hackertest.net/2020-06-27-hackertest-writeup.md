@@ -26,5 +26,6 @@ Will you crack HackerTest.net?_
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/3.png)
 
 
-- So, here we are XD.
+- Here we are XD.
+- :(
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/4.png)
