@@ -108,7 +108,7 @@ Will you crack HackerTest.net?_
 
 
 - After browsing to `site/images/included.gif` route us to a big white image. Do you see what I see?? Once again, please look at the gif with ***4x optical zoom*** of your eyes hahaha.. Damn..super ~~tiny credential~~ at the right bottom there… almost ignore the tiny black credential there.
--  *It’s like our life. We only focus things in front of our eyes. We don’t see the good sides of people at whole things instead of pointing to their mistakes at only one single place.*
+-  *It’s like our lives. We only focus on things in front of our eyes. We don’t see the good sides of people at whole things instead of pointing to their single mistake at only one single place*
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/18.png)
 
