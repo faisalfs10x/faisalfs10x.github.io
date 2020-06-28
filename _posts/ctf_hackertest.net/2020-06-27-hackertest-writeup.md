@@ -15,6 +15,7 @@ HackerTest.net will help you improve your JavaScript, PHP, HTML and graphic thin
 Have a spare minute? Log on! Each level will provide you with a new, harder clue to find a way to get to another level.
 Will you crack HackerTest.net?_
 
+-----------------------------
 ## Level 1
 
 - Level 1 as starting point to the next 20 levels in this challenge.
@@ -36,14 +37,14 @@ Will you crack HackerTest.net?_
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/4.png)
 
-
+-----------------------------
 ## Level 2
 
 - In level 2, just inspect the `null.htm` as before. Reviewing the javascript code, the `pass==”l3l”` and it will bring us to next level.
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/5.png)
 
-
+-----------------------------
 ## Level 3
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/6.png)
@@ -59,7 +60,7 @@ Will you crack HackerTest.net?_
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/8.png)
 
-
+-----------------------------
 ## Level 4
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/9.png)
@@ -74,7 +75,7 @@ Will you crack HackerTest.net?_
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/11.png)
 
-
+-----------------------------
 ## Level 6
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/12.png)
@@ -89,7 +90,7 @@ Will you crack HackerTest.net?_
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/14.png)
 
-
+-----------------------------
 ## Level 7
 
 - In this level, we get login page. It is an authentication challenge.
@@ -112,6 +113,7 @@ Will you crack HackerTest.net?_
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/18.png)
 
+-----------------------------
 ## Level 8
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/19.PNG)
@@ -135,6 +137,7 @@ Will you crack HackerTest.net?_
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/23.PNG)
 
+-----------------------------
 ## Level 9
 
 - Crack the password??
@@ -148,6 +151,7 @@ Will you crack HackerTest.net?_
 - It's base64 right? Decode `Z2F6ZWJydWg=` gives us `gazebruh`.
 - It stated that we need to add page extension to that. Just add `.php` and got it to next level.
 
+-----------------------------
 ## Level 10
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/25.PNG)
@@ -161,11 +165,13 @@ Will you crack HackerTest.net?_
 
 - At first we get nothing then try `shackithalf` as lowercase form and the login form suddenly missing! Check the source code out until we find the flag `<font color="#FFFFFF">Level 11: rofl.php</font>`. No wonder we dont see the flag as it is #FFFFFF HEX white font color.
 
+-----------------------------
 ## Level 11
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/27.PNG)
 - In the source code nothing interesting but `<meta name="robots" content="goto: clipart.php">`. We done..
 
+-----------------------------
 ## Level 12
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/28.PNG)
@@ -178,6 +184,7 @@ Will you crack HackerTest.net?_
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/29.PNG)
 
+-----------------------------
 ## Level 13
 
 - Hint, `Same thing, only different. Pay attention to the changes!`
@@ -192,6 +199,7 @@ Will you crack HackerTest.net?_
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/32.PNG)
 
+-----------------------------
 ## Level 14
 
 - Hint, `Once again, same thing! Pay attention to the changes! A stupid person will wait 20 minutes to get an answer, a smart person will animate.`
@@ -202,4 +210,5 @@ Will you crack HackerTest.net?_
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/34.PNG)
 
+-----------------------------
 ## Level 15
