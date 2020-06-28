@@ -212,3 +212,96 @@ Will you crack HackerTest.net?_
 
 -----------------------------
 ## Level 15
+
+
+- Hint, `Since you still have your photoshop open, check this out: [images/pass2level16.jpg](http://www.hackertest.net/images/pass2level16.jpg) << good luck with it!`
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/35.PNG)
+
+- When we download and try to open it, it will fail...There's something corrupt or wrong file extension format..
+- Ez, just open it with [Hexed.it](https://hexed.it/) and get the flag `unavailable` as below.
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/36.PNG)
+
+----------------------------------------------
+## Level 16
+
+- When we browse to `http://www.hackertest.net/unavailable/`, we will get source code as below.
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/37.PNG)
+
+- It is images directory. Browse to `http://www.hackertest.net/unavailable/images/` bring us to `background="bg.jpg"`.
+- Download `bg.jpg` and open in [Hexed.it](https://hexed.it/) and get the flag `Ducky.php` at beginning of the file.
+
+----------------------------------------------
+## Level 17
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/38.PNG)
+
+- View the source code get us a hint of `Password: your IP address`
+- Then insert our public IP address and get hint of `../level18.shtml`.
+
+----------------------------------------------
+## Level 18
+
+- Hint, `Think like a n00b.`
+- There's also error message at bottom of the page, `$pass) { $errormsg=$msg; show_login_page($errormsg); exit(); } else { setmycookie(); } } else { if ($_COOKIE[$cookiename]<>$pass) { show_login_page($errormsg); exit(); } else { // do nothing } } ?> /level19.shtml << told ya to think like a n00b!!!`
+- It's spill out the flag, `/level19.shtml` 
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/39.PNG)
+
+----------------------------------------------
+## Level 19
+
+- Hint, `A little different, but still the same :)`
+
+- View the source code give us `background="images/level20_pass.gif`
+- 
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber4">
+      <tbody><tr>
+        <td width="100%" background="images/level20_pass.gif">
+        <p align="center">A little different, but still the same :)  </p></td>
+      </tr>
+    </tbody></table>
+
+- Same as level 14. It is a gif, just animate it with [gif player online](https://onlineimagetools.com/gif-player) then get the flag. Damn easy! it is `gazebruh2`.
+
+----------------------------------------------
+## Level 20
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/40.PNG)
+
+- By reviewing the source code hint, 
+- 
+
+    <font face="Arial" size="2">
+    VldwSk5Gb3lVa2hQUjJSclRUSlJlbFJITlU5TlIwNTBWbTE0YTFJelVqSlpNakF4WWtkT2NFNVlWbUZYUmtZeVYycEtTbG95U25SUFZFNU5Xbm93T1QwOT09<br>
+    <font color="#FFFFFF">&nbsp;^^^^^^^^^^ Change domain, add "22332" at the end, reach it and then get hold of ... ^^^^^^^^^^ </font></font>
+
+- First hint is  `Change domain, add "22332" at the end, reach it and then get hold of ... ^^^^^^^^^^`
+- Second hint is `VldwSk5Gb3lVa2hQUjJSclRUSlJlbFJITlU5TlIwNTBWbTE0YTFJelVqSlpNakF4WWtkT2NFNVlWbUZYUmtZeVYycEtTbG95U25SUFZFNU5Xbm93T1QwOT09` that's seems like **Base64  hash digest**. 
+- After *4x Base64 decode* we will get output as `Go to www.streetkorner.net/gb now.`
+- Nothing in `www.streetkorner.net/gb`. But the first hint say that we must change the domain and add "22332" at the end. So it will be `http://www.hackertest.net/gb22332/` as below and we get error message of  `The requested URL /gb22332/login.php was not found on this server. Additionally, a 505 Not Found error was encountered while trying to use an ErrorDocument to handle the request.` hmmm
+
+- Let's browse to http://www.hackertest.net/505/ and we have `The requested URL /505 was not found on this server.Additionally, a 403 Not Found error was encountered while trying to use an ErrorDocument to handle the request.`
+- Then, browse to http://www.hackertest.net/505/403 and we get 
+-
+
+    <center><b>What is the answer to life, the universe, and everything?</b></center>
+    <br><br><br>
+    
+    <!-- Add a file extension to that -->
+- Googling that give us `42` as the answer... What??
+- In Douglas Adams' sci-fi series "The Hitchhiker's Guide to the Galaxy," a pair of programmers task the galaxy's largest supercomputer with answering the ultimate question of the **meaning of life**, the universe and everything. After 7.5 million years of processing, the computer reaches an **answer**: 42
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/42.PNG)
+
+- So, we have http://www.hackertest.net/42.php after adding file extension.
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/43.PNG)
+
+
+   Congratulations!  
+      You have now cracked the HackerTest.net!  
+      Secret code: seoJimWseo.  
+      Great job, Well done.
