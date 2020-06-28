@@ -112,3 +112,38 @@ Will you crack HackerTest.net?_
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/18.png)
 
+## Level 8
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/19.PNG)
+
+- As same as level 7, it’s a background gif named `phat.gif` with a clue of `Look for a .PhotoShopDocument!`
+- It is `.PSD` right? A .PSD file is a layered image file used in Adobe PhotoShop. PSD, which stands for Photoshop Document, format that Photoshop uses for saving data.
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/20.PNG)
+
+- I think the .PSD file would be in the images directory, but it’s a nice try? Nahh….
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/21.PNG)
+
+- Wait, it is .PSD file, right? What about `phat.psd`? Gotchaa. It gives us a file named phat.psd. Lets open it with [pixlr online photo editor]([https://pixlr.com/editor/](https://pixlr.com/editor/)).
+
+- Too many Watermarks!!! here.. Remove them and you get the flag…
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/22.PNG)
+
+- here the flag is !!
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/23.PNG)
+
+## Level 9
+
+- Crack the password??
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/24.PNG)
+
+- Inspect will give us hint `<!-- SOURCE CODE IS NOT AVAILABLE AT THIS TIME //-->`. Let's dig deeper.
+- At the end of the source code, there's a hint of :
+`<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  Password: Z2F6ZWJydWg= add a page extention to that  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ >`
+
+- It's base64 right? Decode `Z2F6ZWJydWg=` gives us `gazebruh`.
+- It stated that we need to add page extension to that. Just add `.php` and got it to next level.
