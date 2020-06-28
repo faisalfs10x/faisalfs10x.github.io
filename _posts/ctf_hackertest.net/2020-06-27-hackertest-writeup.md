@@ -160,3 +160,46 @@ Will you crack HackerTest.net?_
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/26.PNG)
 
 - At first we get nothing then try `shackithalf` as lowercase form and the login form suddenly missing! Check the source code out until we find the flag `<font color="#FFFFFF">Level 11: rofl.php</font>`. No wonder we dont see the flag as it is #FFFFFF HEX white font color.
+
+## Level 11
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/27.PNG)
+- In the source code nothing interesting but `<meta name="robots" content="goto: clipart.php">`. We done..
+
+## Level 12
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/28.PNG)
+
+- hint, `3 letters change everything. Look carefully!`
+- In the source code, there's hint of `<meta name="clue" content="use graphic software">`
+- So, it must related to graphic file...Let's try search for any image. 
+- We find `logo.jpg` and inspect it lead us to `<img style="-webkit-user-select: none;margin: auto;cursor: zoom-in;" src="http://www.hackertest.net/images/logo.jpg" width="152" height="73">`. It is obvious of **cursor: zoom-in;**
+- Zoom in and we get the flag... Do you see that?? 
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/29.PNG)
+
+## Level 13
+
+- Hint, `Same thing, only different. Pay attention to the changes!`
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/30.PNG)
+
+- We find `lvl13.gif` and zoom in we get `4.xml`.
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/31.PNG)
+
+- Oh, it's xml file. Reviewing it we get flag `4xml.php` as below image.
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/32.PNG)
+
+## Level 14
+
+- Hint, `Once again, same thing! Pay attention to the changes! A stupid person will wait 20 minutes to get an answer, a smart person will animate.`
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/33.PNG)
+
+- The different between previous challenge is just `bidvertiser.gif`. It is a gif, so i should be animated right? Just animate it with [gif player online](https://onlineimagetools.com/gif-player) then get the flag. Damn easy! it is `totally.php`.
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/34.PNG)
+
+## Level 15
