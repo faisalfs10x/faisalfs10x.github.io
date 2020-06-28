@@ -298,6 +298,7 @@ Will you crack HackerTest.net?_
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/42.PNG)
 
 - So, we have http://www.hackertest.net/42.php after adding file extension.
+
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/44.jpg)
 
 
