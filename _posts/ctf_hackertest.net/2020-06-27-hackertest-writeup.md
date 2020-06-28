@@ -147,3 +147,16 @@ Will you crack HackerTest.net?_
 
 - It's base64 right? Decode `Z2F6ZWJydWg=` gives us `gazebruh`.
 - It stated that we need to add page extension to that. Just add `.php` and got it to next level.
+
+## Level 10
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/25.PNG)
+
+- The login page already reveal the hint. lmao `You will need to enable cookies for the Hacker Test Admin Panel to work as expected.`
+- By login with wrong password we will get `If you are looking in the script, you are too far, go back.` So, it's not about javascript..Let's try cookie..
+- Nah, not cookie also..
+- But, there's suspicious in between 23 to 32 lines in below image. What's that? Ya, the italic letters. Let's combine them as password and get `Shackithalf`.
+
+![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/hackertest/26.PNG)
+
+- At first we get nothing then try `shackithalf` as lowercase form and the login form suddenly missing! Check the source code out until we find the flag `<font color="#FFFFFF">Level 11: rofl.php</font>`. No wonder we dont see the flag as it is #FFFFFF HEX white font color.
