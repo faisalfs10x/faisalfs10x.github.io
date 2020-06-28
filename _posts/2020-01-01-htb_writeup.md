@@ -34,4 +34,4 @@ tags: [htb, writeup, machine]
   
   
 ## HTB challenge:
-### [HTB_Challenge_writeup.pdf](https://raw.githubusercontent.com/faisalfs10x/HACKING-TECHNIQUES-AND-PREVENTION-finalProject-HackTheBox-writeup/master/HTB%20Challenge%20writeup.pdf)
+### [HTB_Challenge_writeup.pdf](https://raw.githubusercontent.com/faisalfs10x/HACKING-TECHNIQUES-AND-PREVENTION-finalProject-HackTheBox-writeup/master/HTB_Challenges_Writeup.pdf)
