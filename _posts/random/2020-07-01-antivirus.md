@@ -11,7 +11,7 @@ tags: [malware, antivirus]
 
 ## Diving into ESET INTERNET SECURITY 2020 Edition
 
-### The best protection for everyday web users who loves to stream online content. Secures Windows, Mac, Android, and Linux devices.
+The best protection for everyday web users who loves to stream online content. Secures Windows, Mac, Android, and Linux devices.
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/eset/intro.PNG)
 
