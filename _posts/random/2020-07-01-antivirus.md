@@ -81,11 +81,13 @@ There a few methods used by antivirus scanners to detect malware:
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/eset/5.protection.PNG)
 
 - The 3 main protections that need to be configure to enhance the protection level including Computer protection, Internet protection and Network protection.
+
 ---
 ### Computer Protection
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/eset/4.comp%20protection.PNG)
 - Computer Protection that has been offered by Eset Internet Security. I love the Host Intrusion Prevention System feature. I have tested the HIPS by scanning the host and I get blocked by the HIPS :pensive:
 - Webcam protection is also great. Whenever some applications need access to webcam, EIS with alert us earlier before granting access to the application. Good effort bad guys :joy:!!
+
 ---
 ### Internet Protection
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/eset/6.%20internet_protection.PNG)
