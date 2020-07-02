@@ -5,7 +5,7 @@ excerpt: "Monteverde was an Active Directory box on the easier side that require
 date: 2020-06-15
 classes: wide
 header:
-  teaser: /assets/images/htb-writeup-monteverde/intro.png
+  teaser: /assets/images/htb-writeup-monteverde/intro.PNG
   teaser_home_page: true
   icon: /assets/images/hackthebox.webp
 categories:
@@ -20,5 +20,5 @@ tags:
   - winrm
 ---
 
-![](/assets/images/htb-writeup-monteverde/intro.png)
+![](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/windows/monteverde/intro.PNG)
 
