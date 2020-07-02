@@ -20,6 +20,11 @@ Http Login Bruteforce python script with WAF fingerprint and Web Protection fing
 - password field
 - invalid message
 
+## WAF Fingerprint Methodology
+
+- based on request or response headers.
+- response page content.
+
 ## Features
 
  - Read request file from burp suite or any tool request intercept
