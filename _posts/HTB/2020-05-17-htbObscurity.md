@@ -15,7 +15,7 @@ tags: [python, source code, encryption, decryption]
 
 # HTB - Obscurity
 
-![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/obscurity/intro.png "obscurity intro")
+![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/obscurity/intro.PNG "obscurity intro")
 ## Recon
     nmap -sV 10.10.10.168 
     
