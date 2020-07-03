@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Diving into ESET INTERNET SECURITY 2020 Edition"
+excerpt: "The best protection for everyday web users who loves to stream online content. Secures Windows, Mac, Android, and Linux devices."
 date: 2020-07-01 00:22:00 -0000
 classes: wide
 categories: malware
