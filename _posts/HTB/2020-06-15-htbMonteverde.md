@@ -12,12 +12,10 @@ categories:
   - hackthebox
 
 tags:
-  - ad
-  - password spray
+  - smb login bruteforce
   - azure ad
-  - crackmapexec
   - plaintext creds
-  - winrm
+  - evil-winrm
   
 ---
 
