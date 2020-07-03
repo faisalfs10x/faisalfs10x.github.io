@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "OpenAdmin write-up"
+excerpt: "It has an OpenNetAdmin Web-based framework vulnerable to execution of Remote Code. We will compromise all users on the box after collecting some passwords and recon. One account has a sudo entry with nano root permissions which allows root privileges to raise."
 date: 2020-03-25 00:22:00 -0000
 classes: wide
 header:
@@ -17,6 +18,10 @@ tags: [OpenNetAdmin, nano bin]
 # HTB - OpenAdmin
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/openadmin/intro.png "openadmin intro")
+
+It has an OpenNetAdmin Web-based framework vulnerable to execution of Remote Code. We will compromise all users on the box after collecting some passwords and recon. One account has a sudo entry with nano root permissions which allows root privileges to raise.
+
+---
 ## Recon
     nmap -Pn -sV --script vulners --script-args mincvss=7.0 -p22,80 10.10.10.171 
     
@@ -38,6 +43,7 @@ tags: [OpenNetAdmin, nano bin]
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/openadmin/4.png)
 
+---
 ## Exploit
 - First, we have to convert the bash script using `dos2unix` and feed the script with URL argument and we got the `www-data shell`.
 
@@ -67,6 +73,7 @@ tags: [OpenNetAdmin, nano bin]
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/openadmin/11.png)
 
+---
 ## Privilege escalation
 
 - To escalate we tried basic enum using `sudo -l` and found that joanna can run `/bin/nano /opt/priv` without any password.
