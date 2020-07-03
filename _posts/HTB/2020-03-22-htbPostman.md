@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Postman write-up"
+excerpt: "It's an easy-rate box. We will exploit the Redis service to obtain the first interactive shell. Then, we will go up to the next user by reviewing further. We will use the documented CVE 2019–12840 vulnerability on the root shell to exploit the Webmin server."
 date: 2020-03-22 00:22:00 -0000
 classes: wide
 header:
@@ -18,6 +19,9 @@ tags: [redis, webmin, miniserv]
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/intro.PNG "postman intro")
 
+It's an easy-to-use box. We will exploit the Redis service to obtain the first interactive shell. Then, we will go up to the next user by reviewing further. We will use the documented CVE 2019–12840 vulnerability on the root shell to exploit the Webmin server.
+
+---
 ## Recon
     nmap -Pn --open -sC -sV -p- -T4 10.10.10.160 
 
@@ -25,6 +29,7 @@ tags: [redis, webmin, miniserv]
 
 From the nmap scan, I discovered uncommon ports that are 6379 and 10000, Redis key-value store 4.0.9 and http MiniServ 1.910 (Webmin httpd) respectively.
 
+---
 ## Exploit
 Then, I found [Redis RCE exploit](https://packetstormsecurity.com/files/134200/Redis-Remote-Command-Execution.html) from Packet Storm Security. We could exploit unauthenticated Redis server by writing a content inside the memory of Redis server. We have to create our own SSH keys and insert the public key inside the Redis server to be able SSH into the box.
 
@@ -75,7 +80,7 @@ However, we could escalate into Matt by substitute user and read the `user.txt` 
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/postman/11.png)
 
-
+---
 ## Privilege escalation
 Based on nmap scan, we found that `Webmin 1.910 service on port 10000` was up. By using searchsploit, we found RCE exploit in Metasploit module.
 
