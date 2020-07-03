@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Obscurity write-up"
+excerpt: "It was a medium-difficulties Linux box that allowed players to spot an initial access bug on the python-based web server. Once we have initial access to the reverse shell, another script to encrypt the password would have to be examined to gain higher privilege"
 date: 2020-05-17 00:22:00 -0000
 classes: wide
 header:
@@ -16,6 +17,10 @@ tags: [python, source code, encryption, decryption]
 # HTB - Obscurity
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/obscurity/intro.PNG "obscurity intro")
+
+It was a medium-difficulties Linux box that allowed players to spot an initial access bug on the python-based web server. Once we have initial access to the reverse shell, another script to encrypt the password would have to be examined to gain higher privilege
+
+---
 ## Recon
     nmap -sV 10.10.10.168 
     
@@ -211,6 +216,7 @@ Here:
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/obscurity/6_vulnerablecode.png)
 
+---
 ## Exploit
 - So, we insert the [python reverse shell](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#python) from PayloadsAllTheThings github to the URL and get the nc to listen to our payload.
 
@@ -247,6 +253,7 @@ Here:
 
 ![alt text](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/obscurity/13user.png)
 
+---
 ## Privilege escalation
 
 - To escalate we tried basic enum using `sudo -l` and found that `robert` can run `BetterSSH.py` without any password as `root`.
