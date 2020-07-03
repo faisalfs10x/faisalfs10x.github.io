@@ -23,6 +23,8 @@ tags:
 
 ![](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/windows/monteverde/intro.PNG)
 
+Monteverde was an Active Directory box that requires enumerating user accounts via smb then bruteforce smb login via msf module to log in as user shell. Then we find more credentials by enumerating the machine and abusing Azure Admin to retrieve plain text credential in order to gain Admin shell.
+
 ---
 ## Recon
 
