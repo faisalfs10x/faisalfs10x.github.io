@@ -7,10 +7,10 @@ classes: wide
 header:
   teaser: /assets/images/htb-writeup-monteverde/intro.PNG
   teaser_home_page: true
-  icon: /assets/images/hackthebox.webp
+  icon: /assets/hackthebox.webp
 categories:
   - hackthebox
-
+permalink: /htb/htbMonteverde
 tags:
   - smb login bruteforce
   - azure ad
