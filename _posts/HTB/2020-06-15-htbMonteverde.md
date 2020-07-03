@@ -5,7 +5,7 @@ excerpt: "Monteverde was an Active Directory box that requires enumerating user 
 date: 2020-06-15
 classes: wide
 header:
-  teaser: /assets/images/htb-writeup-monteverde/intro.PNG
+  teaser: /asset/htbwriteup/windows/monteverde/intro.PNG
   teaser_home_page: true
   icon: /assets/hackthebox.webp
 categories:
