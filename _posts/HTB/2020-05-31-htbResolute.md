@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Resolute write-up
-excerpt: "Admirer is an easy box that need to exploit Adminer 4.6.2 to get credential for initial shell then abusing shutil module for python library hijacking to escalate into root shell."
+excerpt: "Resolute is a windows box rate as medium"
 date: 2020-05-31
 classes: wide
 header:
