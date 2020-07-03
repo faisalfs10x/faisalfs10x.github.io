@@ -21,31 +21,6 @@ tags:
   
 ---
 
-![](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/windows/monteverde/intro.PNG)
-
-
----
-layout: single
-title: Monteverde write-up
-excerpt: "Monteverde was an Active Directory box on the easier side that requires enumerating user accounts then password spraying to get an initial shell. Then we find more credentials looking around the box and eventually find the MSOL account password which we use to get administrator access."
-date: 2020-06-15
-classes: wide
-header:
-  teaser: /asset/htbwriteup/windows/monteverde/intro.PNG
-  teaser_home_page: true
-  icon: /assets/images/hackthebox.webp
-categories:
-  - hackthebox
-
-tags:
-  - ad
-  - smb login bruteforce
-  - azure ad
-  - plaintext creds
-  - evil-winrm
- 
----
-
 # HTB - Monteverde
 
 ![](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/windows/monteverde/intro.PNG)
