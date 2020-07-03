@@ -18,6 +18,7 @@ tags:
   - crackmapexec
   - plaintext creds
   - winrm
+  
 ---
 
 ![](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/windows/monteverde/intro.PNG)
