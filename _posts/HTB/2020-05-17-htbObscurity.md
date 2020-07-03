@@ -4,7 +4,7 @@ title: "Obscurity write-up"
 date: 2020-05-17 00:22:00 -0000
 classes: wide
 header:
-  teaser: /asset/htbwriteup/linux/obscurity/intro.png
+  teaser: /asset/htbwriteup/linux/obscurity/intro.PNG
   teaser_home_page: true
   icon: /assets/hackthebox.webp
 categories: hackthebox
