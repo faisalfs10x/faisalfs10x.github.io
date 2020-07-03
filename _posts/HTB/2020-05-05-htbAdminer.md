@@ -5,7 +5,7 @@ excerpt: "Adminer"
 date: 2020-05-05
 classes: wide
 header:
-  teaser: /asset/htbwriteup/windows/admirer/intro.PNG
+  teaser: /asset/htbwriteup/linux/admirer/intro.PNG
   teaser_home_page: true
   icon: /assets/hackthebox.webp
 categories:
