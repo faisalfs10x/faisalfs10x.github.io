@@ -1,8 +1,7 @@
-
 ---
 layout: single
 title: Resolute write-up
-excerpt: "Resolute is a windows box rate as medium"
+excerpt: "Resolute was a medium level Windows computer that included a list of users and login discoveries for the SMB system. This password has been pulsed into the SMB login via hydra to the usernames identified. The listing of the privilege escalation led us to another member of the DnsAdmins group. Then, by violating his admin's right to charge the DLL injection to obtain the Admin shell."
 date: 2020-05-31
 classes: wide
 header:
@@ -19,7 +18,8 @@ tags: [dll injection, dnscmd.exe, smbserver.py]
 # HTB - Resolute
 
 ![](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/windows/resolute/intro.PNG)
-Resolute is a windows box rate as medium
+
+Resolute was a medium level Windows computer that included a list of users and login discoveries for the SMB system. This password has been pulsed into the SMB login via hydra to the usernames identified. The listing of the privilege escalation led us to another member of the DnsAdmins group. Then, by violating his admin's right to charge the DLL injection to obtain the Admin shell.
 
 ---
 ## Recon
@@ -45,7 +45,8 @@ Resolute is a windows box rate as medium
 
 ---
 ## Exploit
-- Then, catch the user flag by logging in via `evil-winrm` to melanie account.
+
+- Nmap scan showed that port 5985 is open. It's the default port for WinRM so catch the user flag by logging in via `evil-winrm` to melanie account.
 
 ![](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/windows/resolute/5.png)
 
