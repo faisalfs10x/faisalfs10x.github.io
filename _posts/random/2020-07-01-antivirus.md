@@ -127,4 +127,4 @@ There a few methods used by antivirus scanners to detect malware:
 
 ## Conclusion
 
-Every internet users need to have an antivirus solution nowadays. It is equally necessary to ensure that your online activities, passwords, cloud storage, and financial information are secure to avoid malware infections. Just because your machine is malware-free does not mean you are safer online. Hence, you must make a better choice. So, get [ESET INTERNET SECURITY](https://my.eset.com/refer-friend/MDV67HWH) here ASAP :blush:
+Every internet users need to have an antivirus solution nowadays. It is equally necessary to ensure that your online activities, passwords, cloud storage, and financial information are secure to avoid malware infections. Just because your machine is malware-free does not mean you are safer online. Hence, you must make a better choice. So, get [ESET INTERNET SECURITY](https://my.eset.com/refer-friend/MDV67HWH) here for FREE 30-day trial + 1 extra month promotion :blush:
