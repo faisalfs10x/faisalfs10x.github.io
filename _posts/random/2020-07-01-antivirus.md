@@ -12,7 +12,7 @@ tags: [malware, antivirus]
 
 ## Diving into ESET INTERNET SECURITY 2020 Edition
 
-The best protection for everyday web users who loves to stream online content. Secures Windows, Mac, Android, and Linux devices.
+The best protection for everyday web users who loves to stream online content. Secures Windows, Mac, Android, and Linux devices. Get [ESET INTERNET SECURITY](https://my.eset.com/refer-friend/MDV67HWH) here
 
 ![enter image description here](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/eset/intro.PNG)
 
@@ -127,4 +127,4 @@ There a few methods used by antivirus scanners to detect malware:
 
 ## Conclusion
 
-Every internet users need to have an antivirus solution nowadays. It is equally necessary to ensure that your online activities, passwords, cloud storage, and financial information are secure to avoid malware infections. Just because your machine is malware-free does not mean you are safer online. Hence, you must make a better choice. :blush:
+Every internet users need to have an antivirus solution nowadays. It is equally necessary to ensure that your online activities, passwords, cloud storage, and financial information are secure to avoid malware infections. Just because your machine is malware-free does not mean you are safer online. Hence, you must make a better choice. So, get [ESET INTERNET SECURITY](https://my.eset.com/refer-friend/MDV67HWH) here ASAP :blush:
