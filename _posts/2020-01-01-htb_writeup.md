@@ -8,9 +8,9 @@ permalink: /htb
 tags: [htb, writeup, machine]
 
 ---
-[home](/faisalfs10x.github.io/index)  
+[Home](/faisalfs10x.github.io/index)  
 
-[ ![](https://www.hackthebox.eu/badge/image/133269)](https://www.hackthebox.eu/home/users/profile/133269)
+[ ![](https://www.hackthebox.eu/badge/image/133269)](https://www.hackthebox.eu/profile/133269)
 
 ## HTB machines:
 ### Linux:
