@@ -10,7 +10,7 @@ tags: [htb, writeup, machine]
 ---
 [home](/faisalfs10x.github.io/index)  
 
-[ ![Relwarc17](https://www.hackthebox.eu/badge/image/42767)](https://www.hackthebox.eu/home/users/profile/42767)
+[ ![](https://www.hackthebox.eu/badge/image/133269)](https://www.hackthebox.eu/home/users/profile/133269)
 
 ## HTB machines:
 ### Linux:
