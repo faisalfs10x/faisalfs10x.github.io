@@ -104,13 +104,13 @@ analytics:
 author:
   name             : "Faisal Fsx"
   avatar           : "/assets/avatar.jpg"
-  bio              : "Blog of cyber-security, networking and CTF XD<br><br>- Cyber Security Enthusiast<br>- CTF Player"
+  bio              : "Blog of cyber-security, networking and CTF XD<br><br>- Cyber Security Enthusiast<br>- CTF Player<br> <script\><script src="https://www.hackthebox.eu/badge/133269"></script></script\>"
   location         : "Somewhere, Malaysia"
   email            : "nope"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
-  codepen          : <script src="https://www.hackthebox.eu/badge/133269"></script>
+  codepen          : 
   dribbble         :
   flickr           :
   facebook         :
