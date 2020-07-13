@@ -1,17 +1,17 @@
 ---
 layout: single
-title: Linux Privilege Escalation
-excerpt: "In order to gain root shell, we need to escalate our privilege from local user to root to have best permission on the current system. Privilege escalation could be exploit by different techniques depending on how the linux system is configured by system admin. Here, we can learn different techniques to obtain root shell."
-date: 2020-07-12
+title: Linux privesc write-up
+excerpt: "Tabby is a linux box rate as easy. We need to get `/etc/tomcat9/tomcat-users.xml` file to collect credential through LFI. Then, we could upload WAR file to victim to gain initial shell. To move into ash shell, we have to crack the backup zip file. To escalate into root, we could abusing lxd group membership to obtain root privilege."
+date: 2020-07-11
 classes: wide
 header:
   teaser: /asset/htbwriteup/linux/tabby/intro.png
   teaser_home_page: true
   icon: /assets/hackthebox.webp
 categories:
-  - linux privesc
-permalink: /htb/linuxprivesc
-tags: [ linux, privesc, Kernel Exploits, Stored Passwords, Weak File Permission, SSH Keys,Abusing Intended Functionality,Sudo (Shell Escaping),Sudo (LD_PRELOAD),SUID (Shared Object Injection), SUID (Symlinks), SUID (Environment Variables), Cron, NFS Root Squashing ]
+  - hackthebox
+permalink: /htb/htbTabby
+tags: [ lxd, WAR, Tomcat9, fcrackzip ]
 
 ---
 
