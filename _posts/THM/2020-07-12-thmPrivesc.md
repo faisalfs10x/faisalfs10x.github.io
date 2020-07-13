@@ -5,12 +5,11 @@ excerpt: "In order to gain root shell, we need to escalate our privilege from lo
 date: 2020-07-12
 classes: wide
 header:
-  teaser: /asset/htbwriteup/linux/tabby/intro.png
+  teaser: /asset/thm/linux.png
   teaser_home_page: true
-  icon: /assets/hackthebox.webp
 categories:
   - linux privesc
-permalink: /htb/linuxprivesc
+permalink: /thm/linuxprivesc
 tags: [ linux, privesc, Kernel Exploits, Stored Passwords, Weak File Permission, SSH Keys,Abusing Intended Functionality,Sudo (Shell Escaping),Sudo (LD_PRELOAD),SUID (Shared Object Injection), SUID (Symlinks), SUID (Environment Variables), Cron, NFS Root Squashing ]
 
 ---
