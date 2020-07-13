@@ -21,7 +21,7 @@ In order to gain root shell, we need to escalate our privilege from local user t
 
 ### Privilege Escalation - [Stored Passwords (Config Files)](https://youtu.be/OAs1V56UJqQ)
 
-### Privilege Escalation - [Weak File Permissions](https://youtu.be/OAs1V56UJqQ)
+### Privilege Escalation - [Weak File Permissions](https://youtu.be/nCWcjjBfkmY)
 
 ### Privilege Escalation - [SSH Keys](https://youtu.be/lKfVBxSUPNg) 
 
