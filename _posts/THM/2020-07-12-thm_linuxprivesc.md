@@ -10,7 +10,7 @@ header:
   icon: /assets/hackthebox.webp
 categories:
   - linux privesc
-permalink: /thm/linuxprivesc
+permalink: /htb/linuxprivesc
 tags: [ linux, privesc, Kernel Exploits, Stored Passwords, Weak File Permission, SSH Keys,Abusing Intended Functionality,Sudo (Shell Escaping),Sudo (LD_PRELOAD),SUID (Shared Object Injection), SUID (Symlinks), SUID (Environment Variables), Cron, NFS Root Squashing ]
 
 ---
