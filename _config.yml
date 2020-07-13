@@ -108,6 +108,7 @@ author:
   location         : "Somewhere, Malaysia"
   email            : "nope"
   uri              :
+  youtube          : "https://www.youtube.com/channel/UCfyZIoBCkQcLiVjpCQfrPzA"
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          : 
@@ -131,7 +132,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : "https://www.youtube.com/channel/UCfyZIoBCkQcLiVjpCQfrPzA"
+  
   
 
 # Reading Files
