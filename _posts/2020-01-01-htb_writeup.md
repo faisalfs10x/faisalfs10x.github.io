@@ -13,7 +13,7 @@ tags: [htb, writeup, machine]
 [ ![](https://www.hackthebox.eu/badge/image/133269)](https://www.hackthebox.eu/profile/133269)
 
 
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+[codepen_embed height="298" theme_id="light" slug_hash="zGmdep" default_tab="js,result" user="thebabydino"]See the Pen <a href='https://codepen.io/thebabydino/pen/zGmdep'>neon hex</a> by Ana Tudor (<a href='https://codepen.io/thebabydino'>@thebabydino</a>) on <a href='https://codepen.io'>CodePen</a>.[/codepen_embed]
 
 ## HTB machines:
 ### Linux:
