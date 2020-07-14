@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "notes-simple-ctf pentesting-guide | [my HTB profile](https://www.hackthebox.eu/profile/133269)"
+title: "CTF Pentesting Guide"
 date: 2020-02-10 00:22:00 -0000
 classes: wide
 categories: notes network
@@ -34,7 +34,7 @@ some notes i gathered online when doing ctf pentesting. Super credit to all page
     locate netcat.exe => /usr/share/windows-resources/netcat.exe
     find / -type f -name *joplin* 2>/dev/null
     find / type f -name netcat* => /usr/bin/netcat
-		    			/usr/share/windows-resources/sbd/netcat.exe
+		    			/usr/share/windows-resources/sbd/netcat.exewep
 
 **# Service stuff** - [Linux cheat sheet](https://highon.coffee/blog/linux-commands-cheat-sheet/)
     
@@ -378,16 +378,17 @@ some notes i gathered online when doing ctf pentesting. Super credit to all page
       Nessus
       Nmap -> sudo nmap --script vuln 192.168.0.5
 
-## 9. Wep App attack
+## 9. Web App attack
 [Portswigger learning materials](https://portswigger.net/web-security/all-materials)
 
-**# Web scanning command**	
+**# Web scanning command [find sensitive files]**	
 
 	sudo dirsearch -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u 127.0.0.1 -e php,bak,sql,config,txt,xml
 	dirb http://127.0.0.1 -r -o dirb-127.0.0.1.txt		#Not recursive
 	gobuster -u http://127.0.0.1 -w /usr/share/seclists/Discovery/Web_Content/common.txt -s '200,204,301,302,307,403,500' -e	
 	nikto -host=http://www.megacorpone.com 	
-	wfuzz --hc 400,404 -c /usr/share/dirb/wordlists/small.txt http://localhost:8080/FUZZ/intranet.php
+	wfuzz --hc 400,404 -c -w /usr/share/dirb/wordlists/small.txt http://localhost:8080/FUZZ/intranet.php
+	wfuzz -c -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-big.txt --hc 400,404,403 http://localhost:8080/FUZZ/intranet.php
 	ffuf -c -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-big.txt -u http://htb/FUZZ
 	sslscan localhost:443			#Heartbleed
 	
@@ -559,7 +560,13 @@ some notes i gathered online when doing ctf pentesting. Super credit to all page
 ## 14. Windows PrivEsc  
 [Windows elevation of privileges ToC](https://guif.re/windowseop) | [privilege_escalation_windows](https://sushant747.gitbooks.io/total-oscp-guide/privilege_escalation_windows.html) | [PayloadsAllTheThings - Windows PrivEsc Technique](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md)
 				
-	
+**[WES-NG](https://github.com/bitsadmin/wesng)** - kernel exploit
+
+	cmd victim: systeminfo > sysinfo.txt
+	transfer to kali
+	kali: wes.py sysinfo.txt
+
+
 **[PowerUp.ps1](https://github.com/PowerShellMafia/PowerSploit/blob/master/Privesc/PowerUp.ps1)** - [PowerUp usage](https://recipeforroot.com/advanced-powerup-ps1-usage/) | [PowerSploit manual](https://powersploit.readthedocs.io/en/latest/)
 			
 *[Download & Execute](https://book.hacktricks.xyz/windows/basic-powershell-for-pentesters#download-and-execute)* | [PayloadsAllTheThings - Windows Download and execute methods](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Download%20and%20Execute.md)	
