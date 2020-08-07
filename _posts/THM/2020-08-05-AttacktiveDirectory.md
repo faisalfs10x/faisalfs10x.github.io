@@ -8,6 +8,7 @@ header:
   teaser_home_page: true
 categories:
   - active directory
+  - thm
 permalink: /thm/AttacktiveDirectory
 tags: [ AD, enum4linux, smbmap, smbclient, kerbrute, kerberos, pass the hash, secretdump, psexec]
 
