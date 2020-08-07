@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Linux Privilege Escalation
+title: TryHackMe - Linux Privilege Escalation
 excerpt: "In order to gain root shell, we need to escalate our privilege from local user to root to have best permission on the current system. Privilege escalation could be exploit by different techniques depending on how the linux system is configured by system admin. Here, we can learn different techniques to obtain root shell."
 date: 2020-07-12
 classes: wide
@@ -9,6 +9,7 @@ header:
   teaser_home_page: true
 categories:
   - linux privesc
+  - thm
 permalink: /thm/linuxprivesc
 tags: [ linux, privesc, Kernel Exploits, Stored Passwords, Weak File Permission, SSH Keys,Abusing Intended Functionality,Sudo (Shell Escaping),Sudo (LD_PRELOAD),SUID (Shared Object Injection), SUID (Symlinks), SUID (Environment Variables), Cron, NFS Root Squashing ]
 
