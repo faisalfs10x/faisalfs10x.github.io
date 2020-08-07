@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Attacktive Directory
+title: TryHackMe - Attacktive Directory
 excerpt: "99% of Corporate networks run off of AD. But can you exploit a vulnerable Domain Controller? "
 date: 2020-08-05
 classes: wide
