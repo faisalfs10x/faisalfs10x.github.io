@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Postman write-up | Exploiting Redis 4.0.9 via RCE | Webmin 1.910 for PrivEsc"
+title: "Postman write-up || Exploiting Redis 4.0.9 via RCE || Webmin 1.910 for PrivEsc"
 excerpt: "It's an easy-rate box. We will exploit the Redis service to obtain the first interactive shell. Then, we will go up to the next user by reviewing further. We will use the documented CVE 2019–12840 vulnerability on the root shell to exploit the Webmin server."
 date: 2020-03-22 00:22:00 -0000
 classes: wide
