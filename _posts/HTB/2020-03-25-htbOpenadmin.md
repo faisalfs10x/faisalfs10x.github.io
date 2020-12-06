@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "OpenAdmin write-up | Exploiting OpenNetAdmin 18.1.1 | Escaping Nano to Shell"
+title: "Exploiting OpenNetAdmin 18.1.1 ~ Escaping Nano to Shell"
 excerpt: "It has an OpenNetAdmin Web-based framework vulnerable to execution of Remote Code. We will compromise all users on the box after collecting some passwords and recon. One account has a sudo entry with nano root permissions which allows root privileges to raise."
 date: 2020-03-25 00:22:00 -0000
 classes: wide
