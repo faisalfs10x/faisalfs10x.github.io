@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Resolute write-up
+title: DLL injection in dns.exe & Abusing DNS Admin Membership PrivEsc in Active Directory
 excerpt: "Resolute was a medium level Windows computer that included a list of users and login discoveries for the SMB system. This password has been pulsed into the SMB login via hydra to the usernames identified. The listing of the privilege escalation led us to another member of the DnsAdmins group. Then, by violating his admin's right to charge the DLL injection to obtain the Admin shell."
 date: 2020-05-31
 classes: wide
