@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Blunder write-up
+title: Bludit 3.9.2 Brute Force Mitigation Bypass, Code Execution Vulnerability in "Upload function" & sudo 1.8.27 - Security Bypass
 excerpt: "Blunder is a linux box rate as easy. We need to obtain credential of Bludit v3.9.2 by bruteforce login in order to get a shell. Then, enumerate Bludit files to get user password to switch user into hugo. From there, we could abuse sudo vulnerability to gain root shell."
 date: 2020-07-10
 classes: wide
