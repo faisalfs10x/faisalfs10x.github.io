@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Monteverde write-up
+title: Discovery of azure.xml file & Abusing Azure Admins Group to Leverage Azure AD Connect
 excerpt: "Monteverde was an Active Directory box that requires enumerating user accounts via smb then bruteforce smb login via msf module to log in as user shell. Then we find more credentials by enumerating the machine and abusing Azure Admin to retrieve plain text credential in order to gain Admin shell."
 date: 2020-06-15
 classes: wide
