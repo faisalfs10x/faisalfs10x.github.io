@@ -1,6 +1,6 @@
 ---
 layout: single
-title: TryHackMe - Linux Privilege Escalation
+title: Multiple Techniques for Linux Privilege Escalation
 excerpt: "In order to gain root shell, we need to escalate our privilege from local user to root to have best permission on the current system. Privilege escalation could be exploit by different techniques depending on how the linux system is configured by system admin. Here, we can learn different techniques to obtain root shell."
 date: 2020-07-12
 classes: wide
