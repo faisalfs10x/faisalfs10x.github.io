@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Obscurity write-up"
+title: "Exploiting Bug on the Python-based Web Server for RCE"
 excerpt: "It was a medium-difficulties Linux box that allowed players to spot an initial access bug on the python-based web server. Once we have initial access to the reverse shell, another script to encrypt the password would have to be examined to gain higher privilege"
 date: 2020-05-17 00:22:00 -0000
 classes: wide
