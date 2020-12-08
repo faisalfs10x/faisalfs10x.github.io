@@ -1,6 +1,6 @@
 ---
 layout: single
-title: TryHackMe - Attacktive Directory
+title: Attacking Kerberos with ASREPRoasting & Abusing Backup Operators Group to Extract NTDS.DIT
 excerpt: "99% of Corporate networks run off of AD. But can you exploit a vulnerable Domain Controller? "
 date: 2020-08-05
 classes: wide
