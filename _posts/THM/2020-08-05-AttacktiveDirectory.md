@@ -14,7 +14,7 @@ tags: [ AD, enum4linux, smbmap, smbclient, kerbrute, kerberos, pass the hash, se
 
 ---
 
-99% of Corporate networks run off of AD. But can you exploit a vulnerable Domain Controller? 
+TryHackMe CTF: 99% of Corporate networks run off of AD. But can you exploit a vulnerable Domain Controller? 
 
 ### Scanning the target host for open ports. Basic enumeration tactics will yield a number of ports open. Using a popular enumeration tool that's built on Linux 4 Windows will reveal some information, not a lot to work with however.
  
