@@ -439,6 +439,8 @@ NT AUTHORITY\NTLM Authentication              Well-known group S-1-5-64-10      
 Mandatory Label\High Mandatory Level          Label            S-1-16-12288
 ``` 
 
+OR
+
 ### Login to admin with psexec.py
 
 ``` bash
