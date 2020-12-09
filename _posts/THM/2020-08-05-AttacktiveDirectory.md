@@ -316,7 +316,7 @@ $ cat backup_credentials.txt
 YmFja3VwQHNwb29reXNlYy5XXXXXbDpiYWNrdXAyNTE3ODYw%
 ``` 
 
-### Decode it with base64. Now that we have new user account credentials, we may have more privileges on the system than before. The username of the account "backup" gets us thinking. What is this the backup account to? Well, it is the backup account for the Domain Controller. This account has a unique permission that allows all Active Directory changes to be synced with this user account. This includes password hashes.
+### Decode it with base64. Now that we have new user account credentials, we may have more privileges on the system than before. The username of the account "backup" gets us thinking. What is this the backup account to? Well, it is the backup account for the Domain Controller. This account has a unique permission that allows all Active Directory changes to be synced with this user account. If we manage to compromise a user account that is member of the Backup Operators group, we can then abuse it's SeBackupPrivilege to create a shadow copy of the current state of the DC, extract the ntds.dit database file, dump the hashes and escalate our privileges to DA.
 
 ``` bash
 $ base64 -d backup_credentials.txt             
