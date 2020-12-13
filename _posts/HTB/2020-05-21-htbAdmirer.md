@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Admirer write-up
+title: Exploiting Adminer 4.6.2 File Disclosure Vulnerability & Python Library Hijacking for PrivEsc
 excerpt: "Admirer is an easy box that need to exploit Adminer 4.6.2 to get credential for initial shell then abusing shutil module for python library hijacking to escalate into root shell."
 date: 2020-05-21
 classes: wide
