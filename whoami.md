@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Whoami"
-permalink: /whoami/
+title: "Profile"
+permalink: /profile/
 author_profile: true
 
 ---
