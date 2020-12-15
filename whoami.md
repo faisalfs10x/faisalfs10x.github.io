@@ -15,7 +15,9 @@ My CTF profile:
 
 [ ![](https://www.hackthebox.eu/badge/image/133269)](https://www.hackthebox.eu/profile/133269)
 
+[ ![](https://tryhackme-badges.s3.amazonaws.com/Diefx.png)](https://tryhackme.com/p/Diefx)
+
 [TryHackMe](https://tryhackme.com/p/Diefx "TryHackMe")
 
-<script\ src="https://tryhackme.com/badge/15707"></script\>
+
  
