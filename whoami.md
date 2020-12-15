@@ -17,5 +17,5 @@ My CTF profile:
 
 [TryHackMe](https://tryhackme.com/p/Diefx "TryHackMe")
 
-<script\><script src="https://tryhackme.com/badge/15707"></script></script\>
+<script\ src="https://tryhackme.com/badge/15707"></script\>
  
