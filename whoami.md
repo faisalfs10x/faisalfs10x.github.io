@@ -9,7 +9,7 @@ author_profile: true
 hello guys, Im Faisal Fs who interested in cyber security field.  
 
 - Passionate learner.
-- Interested in red teaming, network intrusion and web application hacking.
+- Interested in red teaming, ethical hacking and web application hacking.
 
 My CTF profile:
 
