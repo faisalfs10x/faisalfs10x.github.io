@@ -13,7 +13,7 @@ hello guys, Im Faisal Fs who interested in cyber security field.
 
 My CTF profile:
 
-|         CTF       | BADGE               |
+|         PLATFORM       | BADGE               |
 |-------------------|-------------------------------
 |HackTheBox         | [ ![](https://www.hackthebox.eu/badge/image/133269)](https://www.hackthebox.eu/profile/133269 "HackTheBox")                       
 |TryHackMe          | [ ![](https://tryhackme-badges.s3.amazonaws.com/Diefx.png)](https://tryhackme.com/p/Diefx "TryHackMe")                      
