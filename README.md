@@ -5,4 +5,4 @@ My InfoSec blog is at https://faisalfs10x.github.io/
 
 (copyright faisalfs10x.github.io)
 
-<script data-ad-client="ca-pub-3765232276470543" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- <script data-ad-client="ca-pub-3765232276470543" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
