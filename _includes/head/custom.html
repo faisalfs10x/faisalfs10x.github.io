@@ -1,5 +1,7 @@
-<!-- start custom head snippets -->
+<!-- start custom head snippets by fesal 26/12/20 -->
 
-<!-- insert favicons. use https://realfavicongenerator.net/ -->
+{% if site.google_analytics and jekyll.environment == 'production' %}
+{% include analytics.html %}
+{% endif %}
 
 <!-- end custom head snippets -->
