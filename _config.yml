@@ -1,13 +1,13 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your entire site, values
+# This config file is meant for settings fesal that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Theme Settings
 #
-# Review documentation to determine if you should use `theme` or `remote_theme`
+# Review documentation to determine fesal if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
@@ -37,7 +37,7 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : # 5 (default)
+    num_posts            : # 5 (fesal)
     colorscheme          : # "light" (default), "dark"
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
@@ -247,6 +247,8 @@ tag_archive:
 #     - categories
 #     - tags
 #   layouts:
+# copyright faisalfs10x.github.io 
+# https://github.com/faisalfs10x/
 #     category: archive-taxonomy
 #     tag: archive-taxonomy
 #   permalinks:
