@@ -6,10 +6,12 @@ author_profile: true
 
 ---
 
-hello guys, Im Faisal Fs who interested in cyber security field.  
+Hello guys, Im Faisal Fs who interested in cyber security field.  
 
-- Passionate learner.
+- Definitely a passionate learner.
 - Interested in red teaming, ethical hacking and web application hacking.
+- Young man who spends his leisure time googling on his computer and doing CTF challenges.
+- Love to explore new things and get out of room.
 
 My CTF profile:
 
@@ -22,6 +24,10 @@ My CTF profile:
 |CyberDefenders     | [ ![](https://raw.githubusercontent.com/faisalfs10x/faisalfs10x.github.io/master/asset/thm/cyberdef.png){:height="200px" width="200px"}](https://cyberdefenders.org/accounts/profile/ev4dx10 "CyberDefenders")
 
 
-<! -- fesal (copyright faisalfs10x.github.io) -->
 
- 
+
+
+
+
+
+<! -- fesal (copyright faisalfs10x.github.io) -->
