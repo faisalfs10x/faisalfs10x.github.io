@@ -6,7 +6,7 @@ author_profile: true
 
 ---
 
-Hello guys, Im Faisal Fs who work as Penetration Tester in Malaysia.  
+Hello guys, I'm Faisal Fs who work as Penetration Tester in Malaysia.  
 
 - Definitely a passionate learner.
 - Interested in red teaming, ethical hacking and web application hacking.
