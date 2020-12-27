@@ -25,9 +25,7 @@ My CTF profile:
 
 
 
+{::comment}
+fesal (copyright faisalfs10x.github.io)
+{:/comment}
 
-
-
-
-
-<! -- fesal (copyright faisalfs10x.github.io) -->
