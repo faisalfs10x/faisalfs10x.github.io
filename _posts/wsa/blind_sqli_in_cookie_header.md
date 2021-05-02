@@ -10,7 +10,7 @@ header:
   icon: 
 categories:
   - web
-permalink: /wsa/blind SQL injection
+permalink: /wsa/blind_SQL_injection_cookie_header
 tags: [ sqli ]
 
 ---
