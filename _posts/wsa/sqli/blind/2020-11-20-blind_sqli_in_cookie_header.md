@@ -15,8 +15,6 @@ tags: [ sqli ]
 
 ---
 
-# Extracting administrator credential via blind SQL injection in cookie header
-
 Blind SQL (Structured Query Language) injection is a method of SQL Injection attack in which the attacker asks the database true or false questions and then decides the answer based on the application's response.
 This attack is often used where the web application is designed to display generic error messages but has not mitigated the SQL injection-vulnerable code. 
 
