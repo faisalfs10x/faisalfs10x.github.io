@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Extracting administrator credential via blind SQL injection in cookie header
+title: Exdwdwdwdwdwtracting administrator credential via blind SQL injection in cookie header
 excerpt: "Blind SQL injection vulnerability in the cookie header. Able to retrieve the contents of the table to obtain the username and password of administrator."
 date: 2020-11-20
 classes: wide
