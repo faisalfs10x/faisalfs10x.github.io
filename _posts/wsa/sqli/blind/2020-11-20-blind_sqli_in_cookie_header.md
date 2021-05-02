@@ -20,7 +20,7 @@ tags: [ sqli ]
 Blind SQL (Structured Query Language) injection is a method of SQL Injection attack in which the attacker asks the database true or false questions and then decides the answer based on the application's response.
 This attack is often used where the web application is designed to display generic error messages but has not mitigated the SQL injection-vulnerable code. 
 
-This post is about blind SQL injection vulnerability in the cookie header that result if retrieving the contents of the table to obtain the username and password of administrator. 
+This post is about blind SQL injection vulnerability in the cookie header that result of retrieving the contents of the table to obtain the username and password of administrator. 
 
 ---
 - To identify the blind SQL injection vulnerability, a simple boolean payload such `' AND '1'='1` could be used to test whether specific message appears in the response. For example, the server return `Welcome back!` message when the condition is true.
