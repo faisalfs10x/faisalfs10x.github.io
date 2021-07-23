@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "[ FaisalFs.io ]"
 title_separator          : "-"
 name                     : "faisalfs10x"
-description              : "Blog of Cyber security, networking and CTF XD"
+description              : "Random stuff on Cyber security, networking and CTF XD"
 url                      : "https://faisalfs10x.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "faisalfs10x/faisalfs10x.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -107,7 +107,7 @@ google_analytics: G-C0MX1WJDXW
 author:
   name             : "Faisal Fs"
   avatar           : "/assets/avatar.jpg"
-  bio              : "Blog of cyber-security and CTF.<br><br>- Cyber Security Analyst<br>- CTF Player"
+  bio              : "Random stuff on cyber-security and CTF.<br><br>- Cyber Security Analyst<br>- CTF Player"
   location         : "Somewhere, Malaysia"
   email            : 
   uri              :
