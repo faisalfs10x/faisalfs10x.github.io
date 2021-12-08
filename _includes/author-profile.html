@@ -64,13 +64,13 @@
         </li>
       {% endif %}
       
-      {% if author.uri %}
-        <li>
-          <a href="{{ author.uri }}" itemprop="url">
-            <i class="fas fa-fw fa-link" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "ExploitDB" }}
-          </a>
-        </li>
-      {% endif %}   
+#      {% if author.uri %}
+#        <li>
+#          <a href="{{ author.uri }}" itemprop="url">
+#            <i class="fas fa-fw fa-link" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "ExploitDB" }}
+#          </a>
+#        </li>
+#      {% endif %}   
       
       {% if author.uri %}
         <li>
