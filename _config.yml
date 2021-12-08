@@ -110,7 +110,7 @@ author:
   bio              : "Random stuff on cyber-security and CTF.<br><br>- Cyber Security Analyst<br>"
   location         : "Malaysia"
   email            : 
-  uri              : "https://packetstormsecurity.com/files/author/15792/"
+  uri              : 
   youtube          : 
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
