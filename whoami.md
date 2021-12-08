@@ -9,9 +9,8 @@ author_profile: true
 Hello guys, I'm Faisal Fs who work as Penetration Tester in Malaysia.  
 
 - Definitely a passionate learner.
-- Interested in red teaming, ethical hacking and web application hacking.
+- Interested in red teaming, ethical hacking and web exploitation.
 - Young man who spends his leisure time googling on his computer and doing CTF challenges.
-- Love to explore new things and get out of the room.
 - Believe me, just doing what I love, and don't what I hate. You can't force me!
 
 My CTF profile:
