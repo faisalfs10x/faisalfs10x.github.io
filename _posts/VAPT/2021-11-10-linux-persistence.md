@@ -15,9 +15,6 @@ tags: [linux, persistence,]
 
 ---
 
-# Common Linux Persistence Techniques
-
-
 This post will cover a few common linux persistence techniques used by adversary to establish permanent access. The adversary is attempting to keep their foothold.
 Persistence refers to strategies used by adversaries to maintain access to systems despite restarts, changing credentials, and other disruptions that may terminate their access. 
 
