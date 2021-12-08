@@ -3,10 +3,14 @@ main:
     url: /
   - title: "Posts"
     url: /year-archive/
-  - title: "HackTheBox WriteUp"
-    url: https://faisalfs10x.github.io/htb#
-  - title: "Projects"
+#  - title: "HackTheBox WriteUp"
+#    url: https://faisalfs10x.github.io/htb#
+#  - title: "Projects"
+#    url: https://faisalfs10x.github.io/project#
+  - title: "Pin"
     url: https://faisalfs10x.github.io/project#
+  - title: "CVE"
+    url: https://github.com/faisalfs10x/CVE-IDs    
   - title: "Categories"
     url: /categories/
   - title: "Tags"
