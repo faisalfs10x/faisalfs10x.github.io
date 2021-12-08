@@ -3,7 +3,7 @@ layout: single
 title: "Common Linux Persistence Techniques"
 excerpt: "The adversary is attempting to keep their foothold.
 Persistence refers to strategies used by adversaries to maintain access to systems despite restarts, changing credentials, and other disruptions that may terminate their access. "
-date: 2021-11-10 00:22:00 -0000
+date: 2021-08-10 00:22:00 -0000
 classes: wide
 header:
   teaser: 
