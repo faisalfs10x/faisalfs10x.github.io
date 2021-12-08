@@ -56,23 +56,23 @@
         {% endfor %}
       {% endif %}
 
-      {% if author.uri %}
+      {% if author.ExploitDB %}
         <li>
-          <a href="{{ author.uri }}" itemprop="url">
+          <a href="{{ author.ExploitDB }}" itemprop="url">
             <i class="fas fa-fw fa-link" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "ExploitDB" }}
           </a>
         </li>
       {% endif %}
       
-<!-- comment start here       
+     
       {% if author.uri %}
         <li>
           <a href="{{ author.uri }}" itemprop="url">
-            <i class="fas fa-fw fa-link" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "ExploitDB" }}
+            <i class="fas fa-fw fa-link" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "Website" }}
           </a>
         </li>
       {% endif %}   
--->      
+   
       {% if author.PacketStorm %}
         <li>
           <a href="{{ author.PacketStorm }}" itemprop="url">
