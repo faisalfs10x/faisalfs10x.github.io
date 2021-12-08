@@ -59,7 +59,7 @@
       {% if author.uri %}
         <li>
           <a href="{{ author.uri }}" itemprop="url">
-            <i class="fas fa-fw fa-link" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "Website" }}
+            <i class="fas fa-fw fa-link" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "ExploitDB" }}
           </a>
         </li>
       {% endif %}
@@ -73,9 +73,9 @@
         </li>
       {% endif %}   
 -->      
-      {% if author.uri %}
+      {% if author.PacketStorm %}
         <li>
-          <a href="{{ author.uri }}" itemprop="url">
+          <a href="{{ author.PacketStorm }}" itemprop="url">
             <i class="fas fa-fw fa-link" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "PacketStorm" }}
           </a>
         </li>
