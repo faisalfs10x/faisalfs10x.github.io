@@ -110,7 +110,7 @@ author:
   bio              : "Random stuff on cyber-security and CTF.<br><br>- Cyber Security Analyst<br>"
   location         : "Malaysia"
   email            : 
-  uri              : 
+  uri              : "https://www.exploit-db.com/?author=11210"
   youtube          : 
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
