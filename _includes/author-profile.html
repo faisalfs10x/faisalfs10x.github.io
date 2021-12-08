@@ -63,6 +63,14 @@
           </a>
         </li>
       {% endif %}
+      
+      {% if author.uri %}
+        <li>
+          <a href="{{ author.uri }}" itemprop="url">
+            <i class="fas fa-fw fa-link" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "PacketStorm" }}
+          </a>
+        </li>
+      {% endif %}
 
       {% if author.email %}
         <li>
