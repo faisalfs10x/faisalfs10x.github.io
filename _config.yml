@@ -110,7 +110,7 @@ author:
   bio              : "Random stuff on cyber-security and CTF.<br><br>- Cyber Security Analyst<br>"
   location         : "Malaysia"
   email            : 
-  uri              : "https://www.exploit-db.com/?author=11210"
+  #uri              : "https://www.exploit-db.com/?author=11210"
   youtube          : 
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -133,7 +133,7 @@ author:
   tumblr           :
   twitter          : "faisalfs10x"
   PacketStorm      : "https://packetstormsecurity.com/files/author/15792/"
-  #ExploitDB        : "https://www.exploit-db.com/?author=11210"
+  ExploitDB        : "https://www.exploit-db.com/?author=11210"
   weibo            :
   xing             :
   
