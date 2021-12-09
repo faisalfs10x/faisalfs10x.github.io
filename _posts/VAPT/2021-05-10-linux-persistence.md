@@ -139,7 +139,7 @@ As for the PoC, we created a MOTD banner named 20-motd-bas that will make a reve
 	EOF
 	root@victim$ chmod +x /etc/update-motd.d/$MOTDNAME
 
-How does it work? At each login, pam motd(8) as the root user invokes executable scripts in /etc/update-motd.d/*, and this information is concatenated in /var/run/motd. The run-parts(8) –lsbsysinit option controls the order in which scripts are executed (essentially alphabetical order, with a few exceptions). 
+How does it work? At each login, pam motd(8) as the root user invokes executable scripts in /etc/update-motd.d/*, and this information is concatenated in /var/run/motd. The run-parts(8) –lsbsysinit option controls the order in which scripts are executed (essentially alphabetical order, with a few exceptions) [1]. 
 
 ## Creating Webshell as backdoor
 
@@ -162,7 +162,7 @@ Adversary commonly placed a webshell for later access. A simple PoC is shown bel
 
 ## Creating Network startup as backdoor
 
-There are four directories in which scripts can be placed which will always be run for any interface during certain phases of ifup and ifdown commands. One of them is `/etc/network/if-up.d/`. Scripts in this directory are run after bringing the interface up.
+There are four directories in which scripts can be placed which will always be run for any interface during certain phases of ifup and ifdown commands. One of them is `/etc/network/if-up.d/`. Scripts in this directory are run after bringing the interface up [2].
 
 	$ Command:
 	
@@ -196,7 +196,7 @@ An adversary may create a wrapper from a legitimate binary as simple as shown be
 
 ## Creating TCP wrapper
 
-Basic traffic filtering of incoming network traffic is provided by TCP wrappers. Other systems can be granted or refused access to "wrapped" network services running on a Linux server.
+Basic traffic filtering of incoming network traffic is provided by TCP wrappers. Other systems can be granted or refused access to "wrapped" network services running on a Linux server [3].
 
 TCP wrappers rely on two configuration files as the basis for access control:
 
@@ -213,8 +213,9 @@ As for PoC, if someone connects to any port on the target machine such as SSH, a
 
 
 ## Reference
-- https://manpages.debian.org/testing/ifupdown/interfaces.5.en.html
-- https://www.thegeekdiary.com/understanding-tcp-wrappers-in-linux/
-- https://attack.mitre.org/techniques/T1574/008/
-- https://attack.mitre.org/techniques/T1505/003/
-- https://attack.mitre.org/techniques/T1543/002/
+1. http://manpages.ubuntu.com/manpages/jammy/en/man5/update-motd.5.html
+2. https://manpages.debian.org/testing/ifupdown/interfaces.5.en.html
+3. https://www.thegeekdiary.com/understanding-tcp-wrappers-in-linux/
+4. https://attack.mitre.org/techniques/T1574/008/
+5. https://attack.mitre.org/techniques/T1505/003/
+6. https://attack.mitre.org/techniques/T1543/002/
