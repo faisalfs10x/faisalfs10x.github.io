@@ -16,15 +16,14 @@ tags: [linux, persistence]
 ---
 
 
-This post will cover a few common linux persistence techniques used by adversary to establish permanent access. This blog assumed that you have basic knowledge of linux OS such as linux service, user privilege, crontab, remote management etc. The adversary is attempting to keep their foothold.
-Persistence refers to strategies used by adversaries to maintain access to systems despite restarts, changing credentials, and other disruptions that may terminate their access. 
+This post will cover a few common Linux persistence techniques used by an adversary to establish permanent access. This blog assumed that you have basic knowledge of Linux OS such as Linux service, user privilege, crontab, remote management etc. The adversaries are attempting to keep their foothold. Persistence refers to strategies used by adversaries to maintain access to systems despite restarts, changing credentials, and other disruptions that may terminate their access.
 
 ---
 ## Creating privilege account
 
 [MITRE ID: T1136.001](https://attack.mitre.org/techniques/T1136/001/)
 
-The adversary tends to create a high privilege account to maintain access on the compromised system. They usually create a user with a sudo privilege across the system.
+The adversary tends to create a high privilege account to maintain access to the compromised system. They usually create a user with a sudo privilege across the system.
 
 	$ Command: 
 	
@@ -38,7 +37,7 @@ The adversary tends to create a high privilege account to maintain access on the
 
 [MITRE ID: T1548.001](https://attack.mitre.org/techniques/T1548/001/)
 
-A binary with its SUID bit set, implying that everything run by the programs will be done with that user's privileges. If the SUID binary is set with root privilege, anyone that run the binary will have access on the system with the root privilege. Below is an example of creating a SUID binary named suid00r.
+A binary with its SUID bit set, implying that everything run by the programs will be done with that user's privileges. If the SUID binary is set with root privilege, anyone that runs the binary will have access to the system with the root privilege. Below is an example of creating a SUID binary named suid00r.
 
 	$ Command:
 	
@@ -56,7 +55,7 @@ A binary with its SUID bit set, implying that everything run by the programs wil
 
 The crontab file contains a list of tasks that you wish to execute on a regular basis, as well as the name of the command that manages them. Crontab stands for "cron table," as it executes tasks using the cron job scheduler. 
 
-Adversary can create a reverse shell that pointing to their C2 server using cron job upon reboot. Below is a simple example of bash reverse shell as for the PoC.
+The adversary can create a reverse shell that points to their C2 server using cron job upon reboot. Below is a simple example of bash reverse shell as for the PoC.
 
 	$ Command:
 	
@@ -66,7 +65,7 @@ Adversary can create a reverse shell that pointing to their C2 server using cron
 
 [MITRE ID: T1546.004](https://attack.mitre.org/techniques/T1546/004/)
 
-A bashrc file is a shell script file that Linux uses when starting up to load items like modules and aliases into user's profile. So, whenever an interactive session is launched, the .bashrc file will load the reverse shell pointing to the adversary C2 server.
+A bashrc file is a shell script file that Linux uses when starting up to load items like modules and aliases into a user's profile. So, whenever an interactive session is launched, the .bashrc file will load the reverse shell pointing to the adversary C2 server.
 
 	$ Command:
 	
@@ -76,10 +75,10 @@ A bashrc file is a shell script file that Linux uses when starting up to load it
 
 [MITRE ID: T1546.004](https://attack.mitre.org/techniques/T1546/004/)
 
-Same as .bashrc backdoor but it leverage linux alias. When we often need to use a single large command several times, we construct an alias for it.
+Same as the .bashrc backdoor but it leverages Linux alias. When we often need to use a single large command several times, we construct an alias for it.
 Alias is a shortcut command that performs the same functions as if we typed the entire command. 
 
-As for the PoC, we use `sudo` alias. Whenever the user type sudo command for example "`sudo netstat -plnt`", the sudo alias will load then asking for user's password and dump the plaintext password to the /tmp/dumper directory before the real sudo operation from `/usr/bin/sudo` spawn.
+As for the PoC, we use `sudo` alias. Whenever the user types sudo command for example "`sudo netstat -plnt`", the sudo alias will load then ask for the user's password and dump the plaintext password to the /tmp/dumper directory before the legitimate sudo binary from `/usr/bin/sudo` spawn.
 
 	$ Command:
 	
@@ -89,9 +88,9 @@ As for the PoC, we use `sudo` alias. Whenever the user type sudo command for exa
 
 [MITRE ID: T1543.002](https://attack.mitre.org/techniques/T1543/002/)
 
-For Linux operating systems, Systemd is a system and service manager. It includes capabilities such as parallel launch of system services at boot time, on-demand activation of daemons, and dependency-based service control logic, and is meant to be backwards compatible with SysV init scripts.
+FFor Linux operating systems, Systemd is a system and service manager. It includes capabilities such as the parallel launch of system services at boot time, on-demand activation of daemons, and dependency-based service control logic, and is meant to be backwards compatible with SysV init scripts.
 
-As for the PoC, we create `backdoorx` service in /etc/systemd/system/ directory. Whenever the system start and the network is ready, it will established a reverse shell to adversary C2.
+As for the PoC, we create `backdoorx` service in /etc/systemd/system/ directory. Whenever the system start and the network is ready, it will establish a reverse shell to adversary C2.
 
 	$ Command:
 	
@@ -117,7 +116,7 @@ As for the PoC, we create `backdoorx` service in /etc/systemd/system/ directory.
 
 In SSH, the authorized keys file defines the SSH keys that can be used to login into the user account for whom the file is set up. It's a crucial configuration file since it sets up persistent access through SSH keys.
 
-As for the PoC, we used adversary SSH Public Key that is placed on the server you intend to log in to.
+As for the PoC, we simulate the adversary SSH Public Key that commonly known as id_rsa.pub that is placed on the server we intend to log in to.
 
 	$ Command:
 	
@@ -128,7 +127,7 @@ As for the PoC, we used adversary SSH Public Key that is placed on the server yo
 
 When you use SSH to log into a machine, a banner called Motd (Message of the Day) shows. Motd scripts for Ubuntu/Debian may be found in /etc/update-motd.d/. 
 
-As for the PoC, we created a MOTD banner named 20-motd-bas that will make a reverse shell to adversary C2 server whenever any user login via SSH.
+As for the PoC, we created a MOTD banner named 20-motd-bas that will make a reverse shell to the adversary C2 server whenever any user login via SSH.
 
 	$ Command:
 	
@@ -146,7 +145,7 @@ How does it work? At each login, pam motd(8) as the root user invokes executable
 
 [MITRE ID: T1505.003](https://attack.mitre.org/techniques/T1505/003/)
 
-Adversary commonly placed a webshell for later access. A simple PoC as shown below.
+Adversary commonly placed a webshell for later access. A simple PoC is shown below.
 
 	$ Command:
 	victim@server$ WEBSHELL='bdoor.php'
@@ -182,7 +181,7 @@ There are four directories in which scripts can be placed which will always be r
 
 [MITRE ID: T1574.008](https://attack.mitre.org/techniques/T1574/008/)
 
-Adversary may created a wrapper from a legitimate binary as simple as shown below. Whenever, any user type command `date`, a reverse shell is spawned to the C2.
+An adversary may create a wrapper from a legitimate binary as simple as shown below. Whenever any user types command `date`, a reverse shell is spawned to the C2.
 
 	$ Command:
 	
@@ -205,7 +204,7 @@ TCP wrappers rely on two configuration files as the basis for access control:
 -   ***/etc/hosts.deny***
 
 These files are used to determine whether or not a client may connect to a network service on a remote host. 
-As for PoC, if someone connect to any port on target machine such as SSH, reverse shell will be spawned to adversary server.
+As for PoC, if someone connects to any port on the target machine such as SSH, a reverse shell will be spawned to the adversary server.
 
 	$ Command:
 
