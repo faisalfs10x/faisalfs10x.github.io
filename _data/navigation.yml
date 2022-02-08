@@ -7,7 +7,7 @@ main:
 #    url: https://faisalfs10x.github.io/htb#
 #  - title: "Projects"
 #    url: https://faisalfs10x.github.io/project#
-  - title: "CVE-ID"
+  - title: "Advisory"
     url: https://github.com/faisalfs10x/CVE-IDs 
   - title: "Repo"
     url: https://faisalfs10x.github.io/repo
