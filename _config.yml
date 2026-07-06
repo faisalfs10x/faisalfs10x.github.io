@@ -23,7 +23,7 @@ description              : "Random stuff on Cyber security, networking and CTF X
 url                      : "https://faisalfs10x.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "faisalfs10x/faisalfs10x.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-logo                     : "/assets/header.jpg"
+logo                     : # "/assets/header.jpg"
 masthead_title           : "Hey yo guys ! what's up ?"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
